@@ -1,0 +1,66 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+		MinWidth="600" MinHeight="400"
+        MaxWidth="800" MaxHeight="600"
+        
+        x:Class="StudentXX_prSPR.MainWindow"
+        Title="MainWindow">
+	<Grid>
+
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"></RowDefinition>
+			<RowDefinition Height="6*"></RowDefinition>
+		</Grid.RowDefinitions>
+
+
+		<StackPanel Grid.Row="0" Orientation="Horizontal" Spacing="10" Margin="20" >
+
+			<ComboBox Width="200" x:Name="MyComboBox"/>
+			<Button Content="Выбрать дату" Click="OnToggleCalendarClick"/>
+			<Button Content="Применить" Background="{DynamicResource SystemAccentColor}"/>
+			<Button Content="Авторизация"  HorizontalAlignment="Right"/>
+			
+		</StackPanel>
+		<ScrollViewer Grid.Row="1" Margin="20" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto">
+			<WrapPanel Grid.Row="1" Margin="20" >
+				<Border Width="250" Padding="10"  CornerRadius="8" BorderBrush="#CCC" BorderThickness="1">
+					<StackPanel Orientation="Vertical" Spacing="8">
+
+						<!-- Фото -->
+				
+
+						<!-- Название -->
+						<TextBlock Text="Название мероприятия"
+								   FontSize="18"
+								   FontWeight="Bold"
+								   TextWrapping="Wrap"
+								   HorizontalAlignment="Center"/>
+
+						<!-- Направление -->
+						<TextBlock Text="Направление: _"
+								   FontSize="14"
+								   Foreground="Gray"
+								   TextWrapping="Wrap"
+								   HorizontalAlignment="Center"/>
+
+						<!-- Дата -->
+						<TextBlock Text="28.05.2025"
+								   FontSize="14"
+								   Foreground="DarkGray"
+								   HorizontalAlignment="Center"/>
+					</StackPanel>
+				</Border>
+				
+			</WrapPanel>
+		</ScrollViewer>
+		
+		
+		
+		<Calendar Name="MyCalendar"
+         Grid.Row="1"
+         IsVisible="False"/>
+	</Grid>
+</Window>

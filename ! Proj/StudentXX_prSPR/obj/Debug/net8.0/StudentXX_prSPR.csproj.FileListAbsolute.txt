@@ -1,0 +1,135 @@
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\bin\Debug\net8.0\StudentXX_prSPR.exe
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\bin\Debug\net8.0\StudentXX_prSPR.deps.json
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\bin\Debug\net8.0\StudentXX_prSPR.runtimeconfig.json
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\bin\Debug\net8.0\StudentXX_prSPR.dll
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\bin\Debug\net8.0\StudentXX_prSPR.pdb
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\bin\Debug\net8.0\Avalonia.Base.dll
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\bin\Debug\net8.0\Avalonia.Controls.dll
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\bin\Debug\net8.0\Avalonia.DesignerSupport.dll
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\bin\Debug\net8.0\Avalonia.Dialogs.dll
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\bin\Debug\net8.0\Avalonia.Markup.Xaml.dll
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\bin\Debug\net8.0\Avalonia.Markup.dll
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\bin\Debug\net8.0\Avalonia.Metal.dll
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\bin\Debug\net8.0\Avalonia.MicroCom.dll
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\bin\Debug\net8.0\Avalonia.OpenGL.dll
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\bin\Debug\net8.0\Avalonia.Vulkan.dll
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\bin\Debug\net8.0\Avalonia.dll
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\bin\Debug\net8.0\Avalonia.Controls.ColorPicker.dll
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\bin\Debug\net8.0\Avalonia.Controls.DataGrid.dll
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\bin\Debug\net8.0\Avalonia.Desktop.dll
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\bin\Debug\net8.0\Avalonia.Diagnostics.dll
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\bin\Debug\net8.0\Avalonia.Fonts.Inter.dll
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\bin\Debug\net8.0\Avalonia.FreeDesktop.dll
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\bin\Debug\net8.0\Avalonia.Native.dll
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\bin\Debug\net8.0\Avalonia.Remote.Protocol.dll
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\bin\Debug\net8.0\Avalonia.Skia.dll
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\bin\Debug\net8.0\Avalonia.Themes.Fluent.dll
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\bin\Debug\net8.0\Avalonia.Themes.Simple.dll
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\bin\Debug\net8.0\Avalonia.Win32.dll
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\bin\Debug\net8.0\Avalonia.X11.dll
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\bin\Debug\net8.0\HarfBuzzSharp.dll
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\bin\Debug\net8.0\MicroCom.Runtime.dll
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\bin\Debug\net8.0\SkiaSharp.dll
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\bin\Debug\net8.0\System.IO.Pipelines.dll
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\bin\Debug\net8.0\Tmds.DBus.Protocol.dll
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\bin\Debug\net8.0\runtimes\win-arm64\native\av_libglesv2.dll
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\bin\Debug\net8.0\runtimes\win-x64\native\av_libglesv2.dll
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\bin\Debug\net8.0\runtimes\win-x86\native\av_libglesv2.dll
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\bin\Debug\net8.0\runtimes\osx\native\libAvaloniaNative.dylib
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\bin\Debug\net8.0\runtimes\linux-arm\native\libHarfBuzzSharp.so
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\bin\Debug\net8.0\runtimes\linux-arm64\native\libHarfBuzzSharp.so
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\bin\Debug\net8.0\runtimes\linux-musl-x64\native\libHarfBuzzSharp.so
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\bin\Debug\net8.0\runtimes\linux-x64\native\libHarfBuzzSharp.so
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\bin\Debug\net8.0\runtimes\osx\native\libHarfBuzzSharp.dylib
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\bin\Debug\net8.0\runtimes\win-arm64\native\libHarfBuzzSharp.dll
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\bin\Debug\net8.0\runtimes\win-x64\native\libHarfBuzzSharp.dll
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\bin\Debug\net8.0\runtimes\win-x86\native\libHarfBuzzSharp.dll
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\bin\Debug\net8.0\runtimes\linux-arm\native\libSkiaSharp.so
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\bin\Debug\net8.0\runtimes\linux-arm64\native\libSkiaSharp.so
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\bin\Debug\net8.0\runtimes\linux-musl-x64\native\libSkiaSharp.so
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\bin\Debug\net8.0\runtimes\linux-x64\native\libSkiaSharp.so
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\bin\Debug\net8.0\runtimes\osx\native\libSkiaSharp.dylib
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\bin\Debug\net8.0\runtimes\win-arm64\native\libSkiaSharp.dll
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\bin\Debug\net8.0\runtimes\win-x64\native\libSkiaSharp.dll
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\bin\Debug\net8.0\runtimes\win-x86\native\libSkiaSharp.dll
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\obj\Debug\net8.0\StudentXX_prSPR.csproj.AssemblyReference.cache
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\obj\Debug\net8.0\Avalonia\Resources.Inputs.cache
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\obj\Debug\net8.0\Avalonia\resources
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\obj\Debug\net8.0\StudentXX_prSPR.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\obj\Debug\net8.0\StudentXX_prSPR.AssemblyInfoInputs.cache
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\obj\Debug\net8.0\StudentXX_prSPR.AssemblyInfo.cs
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\obj\Debug\net8.0\StudentXX_prSPR.csproj.CoreCompileInputs.cache
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\obj\Debug\net8.0\Avalonia\StudentXX_prSPR.dll
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\obj\Debug\net8.0\Avalonia\StudentXX_prSPR.pdb
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\obj\Debug\net8.0\refint\Avalonia\StudentXX_prSPR.dll
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\obj\Debug\net8.0\StudentX.8DB5FA04.Up2Date
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\obj\Debug\net8.0\StudentXX_prSPR.genruntimeconfig.cache
+C:\Users\dende\OneDrive\Рабочий стол\учебная практика весна\проект\StudentXX_prSPR\obj\Debug\net8.0\ref\StudentXX_prSPR.dll
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\bin\Debug\net8.0\StudentXX_prSPR.exe
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\bin\Debug\net8.0\StudentXX_prSPR.deps.json
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\bin\Debug\net8.0\StudentXX_prSPR.runtimeconfig.json
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\bin\Debug\net8.0\StudentXX_prSPR.dll
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\bin\Debug\net8.0\StudentXX_prSPR.pdb
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\bin\Debug\net8.0\Avalonia.Base.dll
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\bin\Debug\net8.0\Avalonia.Controls.dll
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\bin\Debug\net8.0\Avalonia.DesignerSupport.dll
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\bin\Debug\net8.0\Avalonia.Dialogs.dll
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\bin\Debug\net8.0\Avalonia.Markup.Xaml.dll
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\bin\Debug\net8.0\Avalonia.Markup.dll
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\bin\Debug\net8.0\Avalonia.Metal.dll
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\bin\Debug\net8.0\Avalonia.MicroCom.dll
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\bin\Debug\net8.0\Avalonia.OpenGL.dll
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\bin\Debug\net8.0\Avalonia.Vulkan.dll
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\bin\Debug\net8.0\Avalonia.dll
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\bin\Debug\net8.0\Avalonia.Controls.ColorPicker.dll
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\bin\Debug\net8.0\Avalonia.Controls.DataGrid.dll
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\bin\Debug\net8.0\Avalonia.Desktop.dll
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\bin\Debug\net8.0\Avalonia.Diagnostics.dll
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\bin\Debug\net8.0\Avalonia.Fonts.Inter.dll
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\bin\Debug\net8.0\Avalonia.FreeDesktop.dll
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\bin\Debug\net8.0\Avalonia.Native.dll
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\bin\Debug\net8.0\Avalonia.Remote.Protocol.dll
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\bin\Debug\net8.0\Avalonia.Skia.dll
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\bin\Debug\net8.0\Avalonia.Themes.Fluent.dll
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\bin\Debug\net8.0\Avalonia.Themes.Simple.dll
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\bin\Debug\net8.0\Avalonia.Win32.dll
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\bin\Debug\net8.0\Avalonia.X11.dll
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\bin\Debug\net8.0\HarfBuzzSharp.dll
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\bin\Debug\net8.0\MicroCom.Runtime.dll
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\bin\Debug\net8.0\SkiaSharp.dll
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\bin\Debug\net8.0\System.IO.Pipelines.dll
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\bin\Debug\net8.0\Tmds.DBus.Protocol.dll
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\bin\Debug\net8.0\runtimes\win-arm64\native\av_libglesv2.dll
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\bin\Debug\net8.0\runtimes\win-x64\native\av_libglesv2.dll
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\bin\Debug\net8.0\runtimes\win-x86\native\av_libglesv2.dll
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\bin\Debug\net8.0\runtimes\osx\native\libAvaloniaNative.dylib
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\bin\Debug\net8.0\runtimes\linux-arm\native\libHarfBuzzSharp.so
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\bin\Debug\net8.0\runtimes\linux-arm64\native\libHarfBuzzSharp.so
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\bin\Debug\net8.0\runtimes\linux-musl-x64\native\libHarfBuzzSharp.so
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\bin\Debug\net8.0\runtimes\linux-x64\native\libHarfBuzzSharp.so
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\bin\Debug\net8.0\runtimes\osx\native\libHarfBuzzSharp.dylib
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\bin\Debug\net8.0\runtimes\win-arm64\native\libHarfBuzzSharp.dll
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\bin\Debug\net8.0\runtimes\win-x64\native\libHarfBuzzSharp.dll
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\bin\Debug\net8.0\runtimes\win-x86\native\libHarfBuzzSharp.dll
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\bin\Debug\net8.0\runtimes\linux-arm\native\libSkiaSharp.so
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\bin\Debug\net8.0\runtimes\linux-arm64\native\libSkiaSharp.so
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\bin\Debug\net8.0\runtimes\linux-musl-x64\native\libSkiaSharp.so
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\bin\Debug\net8.0\runtimes\linux-x64\native\libSkiaSharp.so
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\bin\Debug\net8.0\runtimes\osx\native\libSkiaSharp.dylib
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\bin\Debug\net8.0\runtimes\win-arm64\native\libSkiaSharp.dll
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\bin\Debug\net8.0\runtimes\win-x64\native\libSkiaSharp.dll
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\bin\Debug\net8.0\runtimes\win-x86\native\libSkiaSharp.dll
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\obj\Debug\net8.0\StudentXX_prSPR.csproj.AssemblyReference.cache
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\obj\Debug\net8.0\Avalonia\Resources.Inputs.cache
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\obj\Debug\net8.0\Avalonia\resources
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\obj\Debug\net8.0\StudentXX_prSPR.GeneratedMSBuildEditorConfig.editorconfig
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\obj\Debug\net8.0\StudentXX_prSPR.AssemblyInfoInputs.cache
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\obj\Debug\net8.0\StudentXX_prSPR.AssemblyInfo.cs
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\obj\Debug\net8.0\StudentXX_prSPR.csproj.CoreCompileInputs.cache
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\obj\Debug\net8.0\StudentXX_prSPR.sourcelink.json
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\obj\Debug\net8.0\Avalonia\StudentXX_prSPR.dll
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\obj\Debug\net8.0\Avalonia\StudentXX_prSPR.pdb
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\obj\Debug\net8.0\refint\Avalonia\StudentXX_prSPR.dll
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\obj\Debug\net8.0\StudentX.8DB5FA04.Up2Date
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\obj\Debug\net8.0\StudentXX_prSPR.genruntimeconfig.cache
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\StudentXX_prSPR\obj\Debug\net8.0\ref\StudentXX_prSPR.dll

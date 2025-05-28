@@ -1,0 +1,215 @@
+-- Пользователь
+CREATE TABLE Users (
+    UserID BIGINT PRIMARY KEY,
+    User_Name NVARCHAR(MAX),
+    User_Surname NVARCHAR(MAX),
+    User_Lastname NVARCHAR(MAX),
+    User_Email NVARCHAR(MAX),
+    User_BirthDay DATETIME,
+    User_Phone NVARCHAR(MAX),
+    User_Photo NVARCHAR(MAX),
+    User_Password NVARCHAR(MAX)
+);
+
+-- Роль
+CREATE TABLE Roles (
+    RoleID BIGINT PRIMARY KEY,
+    Role_Name NVARCHAR(30)
+);
+
+-- Пользователь-Роль
+CREATE TABLE User_Role (
+    User_Role_ID BIGINT PRIMARY KEY,
+    FK_User_ID BIGINT,
+    FK_Role_ID BIGINT
+);
+
+-- Страна
+CREATE TABLE Country (
+    CountryCode BIGINT PRIMARY KEY,
+    Country_Name NVARCHAR(MAX),
+    Country_Name_EN NVARCHAR(MAX),
+    Country_Code2 NVARCHAR(MAX)
+);
+
+-- Пользователь-Страна
+CREATE TABLE User_Country (
+    User_CountryID BIGINT PRIMARY KEY,
+    FK_User_ID BIGINT,
+    FK_Country_ID BIGINT
+);
+
+-- Город
+CREATE TABLE City (
+    CityID BIGINT PRIMARY KEY,
+    City_Name NVARCHAR(MAX),
+    City_Url NVARCHAR(MAX)
+);
+
+-- Мероприятие
+CREATE TABLE Event (
+    EventID BIGINT PRIMARY KEY,
+    Event_Title NVARCHAR(MAX),
+    Event_Start_Time DATETIME,
+    Event_Duration INT,
+    Event_Logo_URL NVARCHAR(MAX)
+);
+
+-- Город-Мероприятие
+CREATE TABLE City_Event (
+    City_Event_ID BIGINT PRIMARY KEY,
+    FK_Event_ID BIGINT,
+    FK_City_ID BIGINT
+);
+
+-- Тип мероприятия
+CREATE TABLE EventType (
+    EventTypeID BIGINT PRIMARY KEY,
+    EventType_Name NVARCHAR(MAX)
+);
+
+-- Мероприятие-Тип мероприятия
+CREATE TABLE Event_EventType (
+    Event_EvenTypeID BIGINT PRIMARY KEY,
+    FK_Event_ID BIGINT,
+    FK_EvenType_ID BIGINT
+);
+
+-- Жюри мероприятия
+CREATE TABLE Event_Jury (
+    Event_Jury_ID BIGINT PRIMARY KEY,
+    FK_Event_ID BIGINT,
+    FK_Activity_ID BIGINT,
+    FK_Jury_ID BIGINT
+);
+
+-- Активность
+CREATE TABLE Activity (
+    Activity_ID BIGINT PRIMARY KEY,
+    Activity_Name NVARCHAR(MAX)
+);
+
+-- Секция
+CREATE TABLE Section (
+    SecID BIGINT PRIMARY KEY,
+    Sec_Name NVARCHAR(MAX)
+);
+
+-- Пользователь-Секция
+CREATE TABLE User_Sec (
+    User_Sec_ID BIGINT PRIMARY KEY,
+    FK_User_ID BIGINT,
+    FK_Sec_ID BIGINT
+);
+
+-- Пользователь-Мероприятие
+CREATE TABLE User_Event (
+    User_Event_ID BIGINT PRIMARY KEY,
+    FK_User_ID BIGINT,
+    FK_Event_ID BIGINT
+);
+
+-- Активность-Мероприятие
+CREATE TABLE Activity_Event (
+    Activity_Event_ID BIGINT PRIMARY KEY,
+    FK_Activity_ID BIGINT,
+    FK_Event_ID BIGINT,
+    Day INT,
+    Start_Time DATETIME,
+    FK_Mod_ID BIGINT
+);
+
+-- Пол
+CREATE TABLE Sex (
+    SexID BIGINT PRIMARY KEY,
+    Sex_Name NVARCHAR(MAX)
+);
+
+-- Пользователь-Пол
+CREATE TABLE User_Sex (
+    User_Sec_ID BIGINT PRIMARY KEY,
+    FK_User_ID BIGINT,
+    FK_Sex_ID BIGINT
+);
+
+-- Секция-Мероприятие
+CREATE TABLE Section_Event (
+    Sec_Event_ID BIGINT PRIMARY KEY,
+    FK_Sec_ID BIGINT,
+    FK_Event_ID BIGINT
+);
+
+-- Добавление внешних ключей
+
+-- Связь Users и Country через User_Country
+ALTER TABLE User_Country
+ADD CONSTRAINT FK_UserCountry_User FOREIGN KEY (FK_User_ID) REFERENCES Users(UserID);
+
+ALTER TABLE User_Country
+ADD CONSTRAINT FK_UserCountry_Country FOREIGN KEY (FK_Country_ID) REFERENCES Country(CountryCode);
+
+-- Связь Users и Roles через User_Role
+ALTER TABLE User_Role
+ADD CONSTRAINT FK_UserRole_User FOREIGN KEY (FK_User_ID) REFERENCES Users(UserID);
+
+ALTER TABLE User_Role
+ADD CONSTRAINT FK_UserRole_Role FOREIGN KEY (FK_Role_ID) REFERENCES Roles(RoleID);
+
+-- Связь City и Event через City_Event
+ALTER TABLE City_Event
+ADD CONSTRAINT FK_CityEvent_Event FOREIGN KEY (FK_Event_ID) REFERENCES Event(EventID);
+
+ALTER TABLE City_Event
+ADD CONSTRAINT FK_CityEvent_City FOREIGN KEY (FK_City_ID) REFERENCES City(CityID);
+
+-- Связь Event и EventType через Event_EventType
+ALTER TABLE Event_EventType
+ADD CONSTRAINT FK_EventEventType_Event FOREIGN KEY (FK_Event_ID) REFERENCES Event(EventID);
+
+ALTER TABLE Event_EventType
+ADD CONSTRAINT FK_EventEventType_EventType FOREIGN KEY (FK_EvenType_ID) REFERENCES EventType(EventTypeID);
+
+-- Связь Event_Jury с Event, Activity и Users (жюри)
+ALTER TABLE Event_Jury
+ADD CONSTRAINT FK_EventJury_Event FOREIGN KEY (FK_Event_ID) REFERENCES Event(EventID);
+
+ALTER TABLE Event_Jury
+ADD CONSTRAINT FK_EventJury_Activity FOREIGN KEY (FK_Activity_ID) REFERENCES Activity(Activity_ID);
+
+ALTER TABLE Event_Jury
+ADD CONSTRAINT FK_EventJury_Jury FOREIGN KEY (FK_Jury_ID) REFERENCES Users(UserID);
+
+-- Связь User_Sec с Users и Section
+ALTER TABLE User_Sec
+ADD CONSTRAINT FK_UserSec_User FOREIGN KEY (FK_User_ID) REFERENCES Users(UserID);
+
+ALTER TABLE User_Sec
+ADD CONSTRAINT FK_UserSec_Section FOREIGN KEY (FK_Sec_ID) REFERENCES Section(SecID);
+
+-- Связь User_Event с Users и Event
+ALTER TABLE User_Event
+ADD CONSTRAINT FK_UserEvent_User FOREIGN KEY (FK_User_ID) REFERENCES Users(UserID);
+
+ALTER TABLE User_Event
+ADD CONSTRAINT FK_UserEvent_Event FOREIGN KEY (FK_Event_ID) REFERENCES Event(EventID);
+
+-- Связь Activity_Event с Activity и Event
+ALTER TABLE Activity_Event
+ADD CONSTRAINT FK_ActivityEvent_Activity FOREIGN KEY (FK_Activity_ID) REFERENCES Activity(Activity_ID);
+
+ALTER TABLE Activity_Event
+ADD CONSTRAINT FK_ActivityEvent_Event FOREIGN KEY (FK_Event_ID) REFERENCES Event(EventID);
+
+-- Связь User_Sex с Users и Sex
+ALTER TABLE User_Sex
+ADD CONSTRAINT FK_UserSex_User FOREIGN KEY (FK_User_ID) REFERENCES Users(UserID);
+
+ALTER TABLE User_Sex
+ADD CONSTRAINT FK_UserSex_Sex FOREIGN KEY (FK_Sex_ID) REFERENCES Sex(SexID);
+
+-- Связь Section_Event с Section и Event
+ALTER TABLE Section_Event
+ADD CONSTRAINT FK_SectionEvent_Section FOREIGN KEY (FK_Sec_ID) REFERENCES Section(SecID);
+
+ALTER TABLE Section_Event
+ADD CONSTRAINT FK_SectionEvent_Event FOREIGN KEY (FK_Event_ID) REFERENCES Event(EventID);

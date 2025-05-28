@@ -1,0 +1,68 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\StudentXX_prSPR\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2612A551-3C70-4AB7-9527-A583D69C5C43}|StudentXX_prSPR.csproj|d:\\cit kai\\uchebnaya2025leto\\! proj\\studentxx_prspr\\mainwindow.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{2612A551-3C70-4AB7-9527-A583D69C5C43}|StudentXX_prSPR.csproj|solutionrelative:mainwindow.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2612A551-3C70-4AB7-9527-A583D69C5C43}|StudentXX_prSPR.csproj|d:\\cit kai\\uchebnaya2025leto\\! proj\\studentxx_prspr\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2612A551-3C70-4AB7-9527-A583D69C5C43}|StudentXX_prSPR.csproj|solutionrelative:mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.axaml",
+              "DocumentMoniker": "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\StudentXX_prSPR\\MainWindow.axaml",
+              "RelativeDocumentMoniker": "MainWindow.axaml",
+              "ToolTip": "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\StudentXX_prSPR\\MainWindow.axaml",
+              "RelativeToolTip": "MainWindow.axaml",
+              "ViewState": "AQIAABMAAAAAAAAAAAAmwCAAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-27T13:16:42.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.axaml.cs",
+              "DocumentMoniker": "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\StudentXX_prSPR\\MainWindow.axaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.axaml.cs",
+              "ToolTip": "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\StudentXX_prSPR\\MainWindow.axaml.cs",
+              "RelativeToolTip": "MainWindow.axaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T13:16:38.447Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 464,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
