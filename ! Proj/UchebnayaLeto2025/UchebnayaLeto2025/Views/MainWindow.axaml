@@ -1,0 +1,45 @@
+<Window
+      xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:vm="clr-namespace:UchebnayaLeto2025.ViewModels"
+    x:Class="UchebnayaLeto2025.Views.MainWindow"
+    Title="UchebnayaLeto2025"
+    Width="800" Height="600">
+
+
+	<Grid>
+
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"></RowDefinition>
+			<RowDefinition Height="6*"></RowDefinition>
+		</Grid.RowDefinitions>
+
+
+		<StackPanel Grid.Row="0" Orientation="Horizontal" Spacing="10" Margin="20" >
+
+			<ComboBox Width="200" x:Name="MyComboBox"/>
+			<Button Content="Выбрать дату" Click="OnToggleCalendarClick"/>
+			<Button Content="Применить" Background="{DynamicResource SystemAccentColor}"/>
+			<Button Content="Авторизация"  HorizontalAlignment="Right"/>
+
+		</StackPanel>
+
+
+
+		<DataGrid
+				Grid.Row="1"
+				Items="{Binding Events}"
+				AutoGenerateColumns="False"
+				Margin="10">
+
+			<DataGrid.Columns>
+				<DataGridTextColumn Header="Название" Binding="{Binding Title}" Width="*"/>
+				<DataGridTextColumn Header="Дата" Binding="{Binding StartTime}" Width="*"/>
+				<DataGridTextColumn Header="Направление" Binding="{Binding Direction}" Width="*"/>
+			</DataGrid.Columns>
+		</DataGrid>
+		<Calendar Name="MyCalendar"
+         Grid.Row="1"
+         IsVisible="False"/>
+	</Grid>
+</Window>

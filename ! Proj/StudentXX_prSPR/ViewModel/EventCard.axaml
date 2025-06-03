@@ -1,0 +1,35 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="StudentXX_prSPR.ViewModel.EventCard">
+
+<Border Width="250" Padding="10"  CornerRadius="8" BorderBrush="#CCC" BorderThickness="1">
+		<StackPanel Orientation="Vertical" Spacing="8">
+
+			<!-- Фото -->
+
+
+			<!-- Название -->
+			<TextBlock Text="Название мероприятия"
+					   FontSize="18"
+					   FontWeight="Bold"
+					   TextWrapping="Wrap"
+					   HorizontalAlignment="Center"/>
+
+			<!-- Направление -->
+			<TextBlock Text="Направление: _"
+					   FontSize="14"
+					   Foreground="Gray"
+					   TextWrapping="Wrap"
+					   HorizontalAlignment="Center"/>
+
+			<!-- Дата -->
+			<TextBlock Text="28.05.2025"
+					   FontSize="14"
+					   Foreground="DarkGray"
+					   HorizontalAlignment="Center"/>
+		</StackPanel>
+	</Border>
+</UserControl>

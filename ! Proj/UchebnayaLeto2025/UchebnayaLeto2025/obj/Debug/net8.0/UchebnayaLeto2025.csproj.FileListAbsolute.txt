@@ -1,0 +1,11 @@
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\UchebnayaLeto2025\UchebnayaLeto2025\obj\Debug\net8.0\UchebnayaLeto2025.csproj.AssemblyReference.cache
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\UchebnayaLeto2025\UchebnayaLeto2025\obj\Debug\net8.0\Avalonia\Resources.Inputs.cache
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\UchebnayaLeto2025\UchebnayaLeto2025\obj\Debug\net8.0\Avalonia\resources
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\UchebnayaLeto2025\UchebnayaLeto2025\obj\Debug\net8.0\UchebnayaLeto2025.GeneratedMSBuildEditorConfig.editorconfig
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\UchebnayaLeto2025\UchebnayaLeto2025\obj\Debug\net8.0\UchebnayaLeto2025.AssemblyInfoInputs.cache
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\UchebnayaLeto2025\UchebnayaLeto2025\obj\Debug\net8.0\UchebnayaLeto2025.AssemblyInfo.cs
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\UchebnayaLeto2025\UchebnayaLeto2025\obj\Debug\net8.0\UchebnayaLeto2025.csproj.CoreCompileInputs.cache
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\UchebnayaLeto2025\UchebnayaLeto2025\obj\Debug\net8.0\UchebnayaLeto2025.sourcelink.json
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\UchebnayaLeto2025\UchebnayaLeto2025\obj\Debug\net8.0\UchebnayaLeto2025.dll
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\UchebnayaLeto2025\UchebnayaLeto2025\obj\Debug\net8.0\refint\UchebnayaLeto2025.dll
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\UchebnayaLeto2025\UchebnayaLeto2025\obj\Debug\net8.0\UchebnayaLeto2025.pdb

@@ -26,33 +26,7 @@
 		</StackPanel>
 		<ScrollViewer Grid.Row="1" Margin="20" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto">
 			<WrapPanel Grid.Row="1" Margin="20" >
-				<Border Width="250" Padding="10"  CornerRadius="8" BorderBrush="#CCC" BorderThickness="1">
-					<StackPanel Orientation="Vertical" Spacing="8">
-
-						<!-- Фото -->
 				
-
-						<!-- Название -->
-						<TextBlock Text="Название мероприятия"
-								   FontSize="18"
-								   FontWeight="Bold"
-								   TextWrapping="Wrap"
-								   HorizontalAlignment="Center"/>
-
-						<!-- Направление -->
-						<TextBlock Text="Направление: _"
-								   FontSize="14"
-								   Foreground="Gray"
-								   TextWrapping="Wrap"
-								   HorizontalAlignment="Center"/>
-
-						<!-- Дата -->
-						<TextBlock Text="28.05.2025"
-								   FontSize="14"
-								   Foreground="DarkGray"
-								   HorizontalAlignment="Center"/>
-					</StackPanel>
-				</Border>
 				
 			</WrapPanel>
 		</ScrollViewer>
