@@ -66,8 +66,7 @@
               "RelativeToolTip": "UCHEBKA\\Views\\EventCard.xaml.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAABoAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T16:18:39.92Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-03T16:18:39.92Z"
             },
             {
               "$type": "Document",
@@ -79,8 +78,7 @@
               "RelativeToolTip": "UCHEBKA\\Models\\Event.cs",
               "ViewState": "AQIAAAcAAAAAAAAAAAAzwAsAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T16:13:14.1Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-03T16:13:14.1Z"
             },
             {
               "$type": "Document",
@@ -92,8 +90,7 @@
               "RelativeToolTip": "UCHEBKA\\Repos\\SectionRepository.cs",
               "ViewState": "AQIAAAIAAAAAAAAAAAAgwA0AAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T16:09:37.608Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-03T16:09:37.608Z"
             },
             {
               "$type": "Document",
@@ -105,21 +102,19 @@
               "RelativeToolTip": "UCHEBKA\\Repos\\EventRepository.cs",
               "ViewState": "AQIAAB0AAAAAAAAAAAA3wDAAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T16:09:27.951Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-03T16:09:27.951Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "UCHEBKA",
+              "Title": "UCHEBKA.csproj",
               "DocumentMoniker": "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\UCHEBKA\\UCHEBKA\\UCHEBKA.csproj",
               "RelativeDocumentMoniker": "UCHEBKA\\UCHEBKA.csproj",
               "ToolTip": "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\UCHEBKA\\UCHEBKA\\UCHEBKA.csproj",
               "RelativeToolTip": "UCHEBKA\\UCHEBKA.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-06-03T16:08:57.756Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-03T16:08:57.756Z"
             },
             {
               "$type": "Document",
@@ -131,8 +126,7 @@
               "RelativeToolTip": "UCHEBKA\\Services\\EventService.cs",
               "ViewState": "AQIAAAcAAAAAAAAAAAAIwA4AAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T15:58:05.456Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-03T15:58:05.456Z"
             },
             {
               "$type": "Document",
@@ -143,8 +137,7 @@
               "ToolTip": "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\UCHEBKA\\UCHEBKA\\Views\\EventCard.xaml",
               "RelativeToolTip": "UCHEBKA\\Views\\EventCard.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-03T15:56:33.347Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-03T15:56:33.347Z"
             },
             {
               "$type": "Document",
@@ -156,8 +149,7 @@
               "RelativeToolTip": "UCHEBKA\\Models\\UchebnayaLeto2025Context.cs",
               "ViewState": "AQIAAAUAAAAAAAAAAAAvwAgAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T15:54:58.515Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-03T15:54:58.515Z"
             },
             {
               "$type": "Document",
@@ -181,8 +173,7 @@
               "RelativeToolTip": "UCHEBKA\\MainWindow.xaml.cs",
               "ViewState": "AQIAAE4AAAAAAAAAAADgv1YAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T15:51:21.055Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-03T15:51:21.055Z"
             }
           ]
         },

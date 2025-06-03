@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UCHEBKA")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a1d93075db76374f4190e3e939f44205a0b23468")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f58791131a16aae7e5f8d34041b8c28a8c83ec79")]
 [assembly: System.Reflection.AssemblyProductAttribute("UCHEBKA")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UCHEBKA")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

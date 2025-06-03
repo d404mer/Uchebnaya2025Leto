@@ -15,8 +15,9 @@
         <!-- Панель фильтров -->
         <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="10">
             <ComboBox x:Name="MyComboBox" Width="200" Margin="0,0,10,0" />
+            <Button Content="Выбрать дату" Margin="0,0,10,0" />
             <Button Content="Применить" Margin="0,0,10,0"/>
-            <Button Content="Выбрать дату" />
+            <Button Content="Авторизация"  Margin="0,0,10,0" />
         </StackPanel>
 
         <!-- Календарь (скрыт по умолчанию) -->
