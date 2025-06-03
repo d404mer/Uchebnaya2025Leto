@@ -1,0 +1,61 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:MVVM_spring.ViewModels"
+        xmlns:views="clr-namespace:MVVM_spring.Views"
+        xmlns:models="clr-namespace:MVVM_spring.Models"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="1000" d:DesignHeight="550"
+        MinWidth="900" MinHeight="400"
+        x:Class="MVVM_spring.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="MVVM_spring">
+
+	<Design.DataContext>
+		<vm:MainWindowViewModel/>
+	</Design.DataContext>
+
+	<Grid Margin="10">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="*"/>
+		</Grid.RowDefinitions>
+
+		<!-- Панель фильтров -->
+		<StackPanel Grid.Row="0" Orientation="Horizontal" Spacing="15" Margin="0,0,0,20">
+			<ComboBox Width="250"
+					  ItemsSource="{Binding EventSections}"
+					  SelectedItem="{Binding SelectedEventSection}"
+					  PlaceholderText="Выберите направление...">
+				<ComboBox.ItemTemplate>
+					<DataTemplate>
+						<TextBlock Text="{Binding EventSectionName}" />
+					</DataTemplate>
+				</ComboBox.ItemTemplate>
+			</ComboBox>
+			<DatePicker SelectedDate="{Binding SelectedDate}"/>
+			<Button Content="Применить"
+					Background="{DynamicResource SystemAccentColor}"
+					Command="{Binding ApplyFilterCommand}" />
+			<Button Content="Авторизация" HorizontalAlignment="Right" />
+		</StackPanel>
+
+		<!-- Список мероприятий -->
+		<ScrollViewer Grid.Row="1" HorizontalScrollBarVisibility="Disabled">
+			<ItemsControl ItemsSource="{Binding Events}">
+				<ItemsControl.ItemsPanel>
+					<ItemsPanelTemplate>
+						<WrapPanel Orientation="Horizontal" HorizontalAlignment="Center"/>
+					</ItemsPanelTemplate>
+				</ItemsControl.ItemsPanel>
+
+				<ItemsControl.ItemTemplate>
+					<DataTemplate x:DataType="models:Event">
+						<views:EventCard Width="260" Margin="10"/>
+					</DataTemplate>
+				</ItemsControl.ItemTemplate>
+			</ItemsControl>
+		</ScrollViewer>
+	</Grid>
+</Window>

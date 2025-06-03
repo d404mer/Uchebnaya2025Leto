@@ -1,0 +1,30 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="Uchebnaya.EventCard">
+	<Border CornerRadius="8" BorderBrush="#CCC" BorderThickness="1"
+			  Background="White" BoxShadow="2 2 8 0 #20000000">
+		<StackPanel Orientation="Vertical" Spacing="8" >
+			<Image Source="avares://MVVM_spring/Assets/EventsLogo/11.jpg"
+                   Margin="10"
+                   Width="240" Height="160"
+                   Stretch="UniformToFill"
+                   HorizontalAlignment="Center"
+                   ClipToBounds="True"/>
+			<TextBlock Text="{Binding EventName}"
+                       FontSize="15"
+                       Foreground="#666"
+                       FontWeight="Bold"
+                       TextWrapping="Wrap"
+                       HorizontalAlignment="Center"
+                       TextAlignment="Center"/>
+			<TextBlock Text="{Binding EventDate, StringFormat='Дата: dd.MM.yyyy'}"
+                       FontSize="14"
+                       Foreground="#666"
+                       HorizontalAlignment="Center"
+                       Margin="5"/>
+		</StackPanel>
+	</Border>
+</UserControl>

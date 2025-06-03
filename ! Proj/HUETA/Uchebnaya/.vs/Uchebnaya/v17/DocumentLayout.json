@@ -1,0 +1,134 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\Uchebnaya\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E67AE2C3-DC73-471C-96DA-DE952D35A754}|Uchebnaya\\Uchebnaya.csproj|d:\\cit kai\\uchebnaya2025leto\\! proj\\uchebnaya\\uchebnaya\\viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E67AE2C3-DC73-471C-96DA-DE952D35A754}|Uchebnaya\\Uchebnaya.csproj|solutionrelative:uchebnaya\\viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E67AE2C3-DC73-471C-96DA-DE952D35A754}|Uchebnaya\\Uchebnaya.csproj|d:\\cit kai\\uchebnaya2025leto\\! proj\\uchebnaya\\uchebnaya\\views\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{E67AE2C3-DC73-471C-96DA-DE952D35A754}|Uchebnaya\\Uchebnaya.csproj|solutionrelative:uchebnaya\\views\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E67AE2C3-DC73-471C-96DA-DE952D35A754}|Uchebnaya\\Uchebnaya.csproj|d:\\cit kai\\uchebnaya2025leto\\! proj\\uchebnaya\\uchebnaya\\models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E67AE2C3-DC73-471C-96DA-DE952D35A754}|Uchebnaya\\Uchebnaya.csproj|solutionrelative:uchebnaya\\models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E67AE2C3-DC73-471C-96DA-DE952D35A754}|Uchebnaya\\Uchebnaya.csproj|d:\\cit kai\\uchebnaya2025leto\\! proj\\uchebnaya\\uchebnaya\\views\\eventcard.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E67AE2C3-DC73-471C-96DA-DE952D35A754}|Uchebnaya\\Uchebnaya.csproj|solutionrelative:uchebnaya\\views\\eventcard.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E67AE2C3-DC73-471C-96DA-DE952D35A754}|Uchebnaya\\Uchebnaya.csproj|d:\\cit kai\\uchebnaya2025leto\\! proj\\uchebnaya\\uchebnaya\\views\\eventcard.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{E67AE2C3-DC73-471C-96DA-DE952D35A754}|Uchebnaya\\Uchebnaya.csproj|solutionrelative:uchebnaya\\views\\eventcard.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E67AE2C3-DC73-471C-96DA-DE952D35A754}|Uchebnaya\\Uchebnaya.csproj|d:\\cit kai\\uchebnaya2025leto\\! proj\\uchebnaya\\uchebnaya\\models\\uchebnayaleto2025context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E67AE2C3-DC73-471C-96DA-DE952D35A754}|Uchebnaya\\Uchebnaya.csproj|solutionrelative:uchebnaya\\models\\uchebnayaleto2025context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Event.cs",
+              "DocumentMoniker": "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\Uchebnaya\\Uchebnaya\\Models\\Event.cs",
+              "RelativeDocumentMoniker": "Uchebnaya\\Models\\Event.cs",
+              "ToolTip": "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\Uchebnaya\\Uchebnaya\\Models\\Event.cs",
+              "RelativeToolTip": "Uchebnaya\\Models\\Event.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAA5wAsAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T15:39:06.954Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UchebnayaLeto2025Context.cs",
+              "DocumentMoniker": "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\Uchebnaya\\Uchebnaya\\Models\\UchebnayaLeto2025Context.cs",
+              "RelativeDocumentMoniker": "Uchebnaya\\Models\\UchebnayaLeto2025Context.cs",
+              "ToolTip": "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\Uchebnaya\\Uchebnaya\\Models\\UchebnayaLeto2025Context.cs",
+              "RelativeToolTip": "Uchebnaya\\Models\\UchebnayaLeto2025Context.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T15:37:47.517Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EventCard.axaml",
+              "DocumentMoniker": "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\Uchebnaya\\Uchebnaya\\Views\\EventCard.axaml",
+              "RelativeDocumentMoniker": "Uchebnaya\\Views\\EventCard.axaml",
+              "ToolTip": "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\Uchebnaya\\Uchebnaya\\Views\\EventCard.axaml",
+              "RelativeToolTip": "Uchebnaya\\Views\\EventCard.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-03T15:35:51.719Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EventCard.axaml.cs",
+              "DocumentMoniker": "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\Uchebnaya\\Uchebnaya\\Views\\EventCard.axaml.cs",
+              "RelativeDocumentMoniker": "Uchebnaya\\Views\\EventCard.axaml.cs",
+              "ToolTip": "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\Uchebnaya\\Uchebnaya\\Views\\EventCard.axaml.cs",
+              "RelativeToolTip": "Uchebnaya\\Views\\EventCard.axaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T15:35:51.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.axaml",
+              "DocumentMoniker": "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\Uchebnaya\\Uchebnaya\\Views\\MainWindow.axaml",
+              "RelativeDocumentMoniker": "Uchebnaya\\Views\\MainWindow.axaml",
+              "ToolTip": "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\Uchebnaya\\Uchebnaya\\Views\\MainWindow.axaml",
+              "RelativeToolTip": "Uchebnaya\\Views\\MainWindow.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-03T15:15:10.385Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindowViewModel.cs",
+              "DocumentMoniker": "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\Uchebnaya\\Uchebnaya\\ViewModels\\MainWindowViewModel.cs",
+              "RelativeDocumentMoniker": "Uchebnaya\\ViewModels\\MainWindowViewModel.cs",
+              "ToolTip": "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\Uchebnaya\\Uchebnaya\\ViewModels\\MainWindowViewModel.cs",
+              "RelativeToolTip": "Uchebnaya\\ViewModels\\MainWindowViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T15:15:09.23Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 464,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
