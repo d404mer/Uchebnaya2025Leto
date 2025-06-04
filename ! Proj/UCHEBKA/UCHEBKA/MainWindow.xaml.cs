@@ -68,13 +68,13 @@ namespace UCHEBKA
             //}
         }
 
-        private void Calendar_SelectedDateChanged(object sender, SelectionChangedEventArgs e)
+       
+
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if (MyCalendar.SelectedDate is DateTime date)
-            {
-                var filteredEvents = _eventRepo.GetEventsByDate(date);
-                ShowEvents(filteredEvents);
-            }
+            AuthWindow auth = new AuthWindow();
+            auth.Show();
+            this.Close();
         }
     }
 }
