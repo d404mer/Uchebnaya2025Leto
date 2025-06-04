@@ -1,24 +1,14 @@
-﻿using System.Text;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using UCHEBKA.Models;
 using UCHEBKA.Repos;
 using UCHEBKA.Views;
-
+using Section = UCHEBKA.Models.Section;
 
 namespace UCHEBKA
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    /// 
 
     public partial class MainWindow : Window
     {
@@ -64,13 +54,16 @@ namespace UCHEBKA
 
         private void ApplyFilterButton_Click(object sender, RoutedEventArgs e)
         {
-            //if (MyComboBox.SelectedItem is Section selectedSection)
+            //// Явно указываем пространство имён, чтобы избежать конфликта с System.Windows.Documents.Section
+            //if (MyComboBox.SelectedItem is UCHEBKA.Models.Section selectedSection)
             //{
+            //    // Теперь метод принимает long, и SecId можно передавать напрямую
             //    var filteredEvents = _eventRepo.GetEventsBySection(selectedSection.SecId);
             //    ShowEvents(filteredEvents);
             //}
             //else
             //{
+            //    // Если ничего не выбрано, показываем все мероприятия
             //    ShowEvents(_events);
             //}
         }

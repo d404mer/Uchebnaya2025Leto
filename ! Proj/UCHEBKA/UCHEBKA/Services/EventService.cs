@@ -17,11 +17,12 @@ namespace UCHEBKA.Services
             _db = db;
         }
 
-        public List<Event> GetEventsWithSections()
+        public List<Event> GetEventsBySection(long sectionId)
         {
             return _db.Events
                 .Include(e => e.SectionEvents)
                 .ThenInclude(se => se.FkSec)
+                .Where(e => e.SectionEvents.Any(se => se.FkSec.SecId == sectionId))
                 .ToList();
         }
     }

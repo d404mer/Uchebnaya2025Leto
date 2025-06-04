@@ -26,5 +26,8 @@ namespace UCHEBKA.Views
             InitializeComponent();
             DataContext = ev; 
         }
+
+
+        
     }
 }
