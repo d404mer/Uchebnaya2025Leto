@@ -9,7 +9,13 @@
         MinHeight="450" MinWidth="850"
         Title="Мероприятия" Height="450" Width="850">
     <Grid>
-        <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+        <!-- Основной контейнер -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
         <!-- Панель фильтров -->
         <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="10">
             <ComboBox x:Name="MyComboBox" Width="200" Margin="0,0,10,0" 
@@ -25,21 +31,19 @@
         <!-- Выбранная дата -->
         <TextBlock x:Name="SelectedDateText" Grid.Row="1" Margin="10,0" FontWeight="Bold"/>
 
-        <!-- Список карточек -->
-        <ScrollViewer Grid.Row="2">
+        <!-- Список карточек с возможностью прокрутки -->
+        <ScrollViewer HorizontalAlignment="Center" Grid.Row="2" VerticalScrollBarVisibility="Auto">
             <WrapPanel x:Name="EventsWrapPanel" Margin="10"/>
         </ScrollViewer>
 
         <!-- Календарь (скрыт по умолчанию, поверх других элементов) -->
-        <Calendar x:Name="MyCalendar" Grid.Row="2" 
+        <Calendar x:Name="MyCalendar" Grid.Row="0" Grid.RowSpan="3"
                  Visibility="Collapsed"
-                 Panel.ZIndex="1"
+                 Panel.ZIndex="100"
                  HorizontalAlignment="Left"
                  VerticalAlignment="Top"
-                 Margin="10"
+                 Margin="100,50,0,0"
                  Background="White"
                  SelectedDatesChanged="MyCalendar_SelectedDatesChanged"/>
-        </StackPanel>
-        
     </Grid>
 </Window>

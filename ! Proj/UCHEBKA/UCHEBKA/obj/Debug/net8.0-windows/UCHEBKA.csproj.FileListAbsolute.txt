@@ -1,5 +1,4 @@
 D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\UCHEBKA.csproj.AssemblyReference.cache
-D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\AuthWindow.g.cs
 D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\MainWindow.g.cs
 D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\Views\EventCard.g.cs
 D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\App.g.cs
@@ -134,7 +133,6 @@ D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\bin\Debug\net8.0-windows\run
 D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\bin\Debug\net8.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
 D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\bin\Debug\net8.0-windows\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
-D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\AuthWindow.baml
 D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\MainWindow.baml
 D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\Views\EventCard.baml
 D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\UCHEBKA.g.resources
@@ -149,11 +147,15 @@ D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\ref
 D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\UCHEBKA.pdb
 D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\UCHEBKA.genruntimeconfig.cache
 D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\ref\UCHEBKA.dll
-D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\AdminWindow.g.cs
-D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\JuryWindow.g.cs
-D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\OrgWindow.g.cs
-D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\ParticipantWindow.g.cs
-D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\AdminWindow.baml
-D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\JuryWindow.baml
-D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\OrgWindow.baml
-D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\ParticipantWindow.baml
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\Views\OrgWindow.baml
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\Views\AdminWindow.g.cs
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\Views\AuthWindow.g.cs
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\Views\JuryWindow.g.cs
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\Views\OrgWindow.g.cs
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\Views\ParticipantWindow.g.cs
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\Views\AdminWindow.baml
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\Views\AuthWindow.baml
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\Views\JuryWindow.baml
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\Views\ParticipantWindow.baml
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\Views\ProfileWindow.baml
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\Views\ProfileWindow.g.cs

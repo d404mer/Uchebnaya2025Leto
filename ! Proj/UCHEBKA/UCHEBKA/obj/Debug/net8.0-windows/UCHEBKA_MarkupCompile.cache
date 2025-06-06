@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\App.xaml
-7-2102989793
+81147507049
 
-33-819298675
+34-304881173
 2281211604773
-AdminWindow.xaml;AuthWindow.xaml;JuryWindow.xaml;MainWindow.xaml;OrgWindow.xaml;ParticipantWindow.xaml;Views\EventCard.xaml;
+MainWindow.xaml;Views\AdminWindow.xaml;Views\AuthWindow.xaml;Views\EventCard.xaml;Views\JuryWindow.xaml;Views\OrgWindow.xaml;Views\ParticipantWindow.xaml;Views\ProfileWindow.xaml;
 
 False
 

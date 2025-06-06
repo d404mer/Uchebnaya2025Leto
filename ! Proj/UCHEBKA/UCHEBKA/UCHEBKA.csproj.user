@@ -7,19 +7,22 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="AdminWindow.xaml.cs">
+    <Compile Update="Views\AdminWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="JuryWindow.xaml.cs">
+    <Compile Update="Views\JuryWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="OrgWindow.xaml.cs">
+    <Compile Update="Views\OrgWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="ParticipantWindow.xaml.cs">
+    <Compile Update="Views\ParticipantWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\EventCard.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\ProfileWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

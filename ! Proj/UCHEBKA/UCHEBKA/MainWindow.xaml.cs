@@ -53,6 +53,7 @@ namespace UCHEBKA
             if (_currentUser == null)
             {
                 ShowAuthWindow();
+                this.Close();
             }
         }
 

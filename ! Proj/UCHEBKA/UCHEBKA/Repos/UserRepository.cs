@@ -55,5 +55,74 @@ namespace UCHEBKA.Repos
                 .Select(ur => ur.FkRole.RoleName)
                 .FirstOrDefault();
         }
+
+        public string GetUserSex(long userId)
+        {
+            return _db.UserSexes
+                .Where(us => us.FkUserId == userId)
+                .Select(us => us.FkSex.SexName)
+                .FirstOrDefault();
+        }
+
+        public User GetUserById(long userId)
+        {
+            return _db.Users
+                .Include(u => u.UserSexes)
+                .ThenInclude(us => us.FkSex)
+                .FirstOrDefault(u => u.UserId == userId);
+        }
+
+        public void UpdateUser(User user)
+        {
+            _db.Users.Update(user);
+            _db.SaveChanges();
+        }
+
+        public List<Sex> GetAllSexes()
+        {
+            return _db.Sexes.ToList();
+        }
+
+        public void UpdateUserSex(long userId, long sexId)
+        {
+            var userSex = _db.UserSexes.FirstOrDefault(us => us.FkUserId == userId);
+
+            if (userSex != null)
+            {
+                userSex.FkSexId = sexId;
+            }
+            else
+            {
+                _db.UserSexes.Add(new UserSex
+                {
+                    FkUserId = userId,
+                    FkSexId = sexId
+                });
+            }
+
+            _db.SaveChanges();
+        }
+
+        public bool UpdatePassword(long userId, string currentPassword, string newPassword)
+        {
+            var user = _db.Users.FirstOrDefault(u => u.UserId == userId && u.UserPassword == currentPassword);
+
+            if (user != null)
+            {
+                user.UserPassword = newPassword;
+                _db.SaveChanges();
+                return true;
+            }
+
+            return false;
+        }
+
+        public User GetCurrentUserData()
+        {
+            var currentUser = GetCurrentUser();
+            if (currentUser == null) return null;
+
+            return GetUserById(currentUser.Value.userId);
+        }
     }
 }
