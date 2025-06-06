@@ -6,7 +6,6 @@ namespace UCHEBKA.Models;
 
 public partial class UchebnayaLeto2025Context : DbContext
 {
- 
     public UchebnayaLeto2025Context()
     {
     }
@@ -56,10 +55,12 @@ public partial class UchebnayaLeto2025Context : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Server=DESKTOP-AF0FDGA;Database=UchebnayaLeto2025;Trusted_Connection=True;TrustServerCertificate=True;");
+        => optionsBuilder.UseSqlServer("Server=USER;Database=UchebnayaLeto2025;Trusted_Connection=True;TrustServerCertificate=True;");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        modelBuilder.UseCollation("SQL_Latin1_General_CP1_CI_AS");
+
         modelBuilder.Entity<Activity>(entity =>
         {
             entity.HasKey(e => e.ActivityId).HasName("PK__Activity__393F5BA573E56DB6");
@@ -153,7 +154,7 @@ public partial class UchebnayaLeto2025Context : DbContext
                 .ValueGeneratedNever()
                 .HasColumnName("EventID");
             entity.Property(e => e.EventDuration).HasColumnName("Event_Duration");
-            entity.Property(e => e.EventLogoUrl).HasColumnName("Event_Logo_URL");
+            entity.Property(e => e.EventLogoUrl).HasColumnName("Event_logoURL");
             entity.Property(e => e.EventStartTime)
                 .HasColumnType("datetime")
                 .HasColumnName("Event_Start_Time");

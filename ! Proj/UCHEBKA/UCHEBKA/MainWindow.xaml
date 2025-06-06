@@ -5,30 +5,41 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:UCHEBKA"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Мероприятия" Height="450" Width="800">
     <Grid>
         <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
         <!-- Панель фильтров -->
-        <StackPanel
-            x:Name="AuthBtn"
-            Grid.Row="0" Orientation="Horizontal" Margin="10">
-            <ComboBox x:Name="MyComboBox" Width="200" Margin="0,0,10,0" />
-            <Button Content="Выбрать дату" Margin="0,0,10,0" />
-            <Button Content="Применить" Margin="0,0,10,0"/>
-            <Button Content="Авторизация"  Margin="0,0,10,0" Click="Button_Click" />
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="10">
+            <ComboBox x:Name="MyComboBox" Width="200" Margin="0,0,10,0" 
+                     DisplayMemberPath="SecName"
+                     SelectedValuePath="SecId"
+                     SelectionChanged="ComboBox_SelectionChanged"/>
+            <Button x:Name="DatePickerButton" Content="Выбрать дату" Margin="0,0,10,0" Click="DatePickerButton_Click"/>
+            <Button Content="Сбросить фильтры" Margin="0,0,10,0" Click="ResetFilters_Click"/>
+            <Button Content="Авторизация" Margin="0,0,10,0" Click="Button_Click" />
         </StackPanel>
 
-        <!-- Календарь (скрыт по умолчанию) -->
-        <Calendar x:Name="MyCalendar" Grid.Row="1" Visibility="Collapsed"
-                 />
+        <!-- Выбранная дата -->
+        <TextBlock x:Name="SelectedDateText" Grid.Row="1" Margin="10,0" FontWeight="Bold"/>
 
         <!-- Список карточек -->
-        <ScrollViewer Grid.Row="1">
+        <ScrollViewer Grid.Row="2">
             <WrapPanel x:Name="EventsWrapPanel" Margin="10"/>
         </ScrollViewer>
+
+        <!-- Календарь (скрыт по умолчанию, поверх других элементов) -->
+        <Calendar x:Name="MyCalendar" Grid.Row="2" 
+                 Visibility="Collapsed"
+                 Panel.ZIndex="1"
+                 HorizontalAlignment="Left"
+                 VerticalAlignment="Top"
+                 Margin="10"
+                 Background="White"
+                 SelectedDatesChanged="MyCalendar_SelectedDatesChanged"/>
     </Grid>
 </Window>
