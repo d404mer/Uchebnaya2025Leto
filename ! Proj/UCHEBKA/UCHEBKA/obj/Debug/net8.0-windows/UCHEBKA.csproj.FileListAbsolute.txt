@@ -149,3 +149,11 @@ D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\ref
 D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\UCHEBKA.pdb
 D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\UCHEBKA.genruntimeconfig.cache
 D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\ref\UCHEBKA.dll
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\AdminWindow.g.cs
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\JuryWindow.g.cs
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\OrgWindow.g.cs
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\ParticipantWindow.g.cs
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\AdminWindow.baml
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\JuryWindow.baml
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\OrgWindow.baml
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\ParticipantWindow.baml

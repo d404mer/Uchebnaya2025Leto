@@ -5,22 +5,47 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:UCHEBKA"
         mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        MinHeight="350" MinWidth="400"
+        MaxHeight="350" MaxWidth="400"
         Title="AuthWindow" Height="350" Width="400">
     <Grid>
         <StackPanel Orientation="Vertical" Width="200" Height="300">
+            <StackPanel Orientation="Horizontal">
+                <Button Content="←" Width="30" Height="20"/>
+                <TextBlock FontSize="20" FontFamily="Arial Black" 
+            Margin="5"
+            HorizontalAlignment="Center">Авторизация</TextBlock>
+            </StackPanel>
+
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Height="20" Margin="5,0,0,0" FontSize="15" Text="ID: "/>
+                <TextBox x:Name="UserIDTextBox" Margin="5" Width="157"/>
+
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock 
+                    Height="20" 
+                    Margin="5,0,0,0" 
+                    FontSize="15" 
+                    Text="Пароль: "/>
+                
+                <PasswordBox
+                    x:Name="UserPasswordBox"
+                    Width="120"
+                    Margin="5"/>
+            </StackPanel>
             
-           
-            <TextBlock FontSize="20" FontFamily="Arial Black" 
-                       Margin="5"
-                       HorizontalAlignment="Center">Авторизация</TextBlock>
-            <TextBox x:Name="UserIDTextBox" Text="ID"
-                     Margin="5"/>
-            <PasswordBox x:Name="UserPasswordBox"
-                         Margin="5"/>
 
             <Border Margin="5" BorderBrush="Gray" BorderThickness="1" Padding="10" Background="{DynamicResource CaptchaBackground}">
                 <Grid>
-                    <Canvas x:Name="CaptchaBackgroundCanvas"/>
+                    <Canvas x:Name="CaptchaCanvas" 
+                            Width="150" 
+                            Height="50" 
+                            Margin="5"
+        Background="#FFF0F0F0"/>
                     <TextBlock x:Name="CaptchaText" 
                                FontSize="24" 
                                FontWeight="Bold" 
@@ -32,7 +57,10 @@
 
             <TextBox x:Name="CaptchaInput" 
                      Margin="5" 
-                     Text="Введите каптчу"/>
+                     Text="Введите каптчу" 
+                     GotFocus="CaptchaInput_GotFocus"
+                     LostFocus="CaptchaInput_LostFocus"
+                     />
 
             <Button x:Name="RefreshCaptchaButton" 
                     Content="Обновить каптчу" 

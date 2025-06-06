@@ -13,15 +13,18 @@ namespace UCHEBKA
     {
         private readonly EventRepository _eventRepo;
         private readonly SectionRepository _sectionRepo;
+        private readonly UserRepository _userRepo;
         private List<Event> _allEvents;
         private DateTime? _selectedDate = null;
         private int? _selectedSectionId = null;
+        private User _currentUser;
 
         public MainWindow()
         {
             var db = new UchebnayaLeto2025Context();
             _eventRepo = new EventRepository(db);
             _sectionRepo = new SectionRepository(db);
+            _userRepo = new UserRepository(db);
 
             InitializeComponent();
             LoadData();
@@ -32,7 +35,6 @@ namespace UCHEBKA
             _allEvents = _eventRepo.GetAllEvents();
             var sections = _sectionRepo.GetAllSections();
 
-            // Добавляем пустой элемент для сброса фильтра
             var allSections = new List<Section> { new Section { SecId = 0, SecName = "Все секции" } };
             allSections.AddRange(sections);
 
@@ -40,6 +42,64 @@ namespace UCHEBKA
             MyComboBox.SelectedIndex = 0;
 
             ShowEvents(_allEvents);
+        }
+
+        private void AuthButton_Click(object sender, RoutedEventArgs e)
+        {
+            // Пытаемся выполнить автоматический вход
+            TryAutoLogin();
+
+            // Если автоматический вход не удался, показываем окно авторизации
+            if (_currentUser == null)
+            {
+                ShowAuthWindow();
+            }
+        }
+
+        private void TryAutoLogin()
+        {
+            var cred = _userRepo.GetCurrentUser();
+            if (cred != null)
+            {
+                var (userId, password) = cred.Value;
+                _currentUser = _userRepo.Auth(userId, password);
+
+                if (_currentUser != null)
+                {
+                    OpenRoleBasedWindow();
+                }
+            }
+        }
+
+        private void OpenRoleBasedWindow()
+        {
+            var role = _userRepo.GetUserRole(_currentUser.UserId);
+
+            Window window = role switch
+            {
+                "модератор" => new AdminWindow(),
+                "жюри" => new JuryWindow(),
+                "организатор" => new OrgWindow(),
+                _ => new ParticipantWindow()
+            };
+
+            window.Show();
+            this.Close();
+        }
+
+        private void ShowAuthWindow()
+        {
+            AuthWindow authWindow = new AuthWindow();
+            authWindow.Closed += (s, args) =>
+            {
+                // После закрытия окна авторизации проверяем, был ли успешный вход
+                if (authWindow.DialogResult == true)
+                {
+                    // Закрываем главное окно
+                    this.Close();
+                }
+            };
+            authWindow.ShowDialog();
         }
 
         private void ShowEvents(List<Event> events)
@@ -127,11 +187,6 @@ namespace UCHEBKA
             ShowEvents(_allEvents);
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            AuthWindow auth = new AuthWindow();
-            auth.Show();
-            this.Close();
-        }
+       
     }
 }
