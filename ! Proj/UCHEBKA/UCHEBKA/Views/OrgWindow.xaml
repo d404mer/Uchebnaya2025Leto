@@ -64,7 +64,7 @@
                    Style="{StaticResource CenterPanelStyle}"
                    Margin="10">
             <Border Style="{StaticResource ImageBorderStyle}">
-                <Image Source="/Images/Events/1.jpeg" 
+                <Image x:Name="ProfileImage"
                        HorizontalAlignment="Center"
                        Stretch="UniformToFill"
                        VerticalAlignment="Center"/>

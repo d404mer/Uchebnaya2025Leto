@@ -4,6 +4,7 @@ using UCHEBKA.Repos;
 using UCHEBKA.Models;
 using UCHEBKA.Views;
 using UCHEBKA.Views.Helpers;
+using System.Windows.Media.Imaging;
 
 namespace UCHEBKA
 {
@@ -16,12 +17,13 @@ namespace UCHEBKA
         public OrgWindow()
         {
             InitializeComponent();
-            
+
             _db = new UchebnayaLeto2025Context();
             _userRepo = new UserRepository(_db);
-            
+
             LoadUserData();
         }
+           
 
         private void LoadUserData()
         {
@@ -36,8 +38,14 @@ namespace UCHEBKA
                     SetGreeting();
                     MrMrsText.Text = GetUserTitle(_currentUser.UserId) + " " + _currentUser.UserLastname;
                 }
+                string imageName = _currentUser.UserPhoto;
+                var ProfileImagePath = _userRepo.GetFullImagePath(imageName);
+
+                // Установка изображения
+                ProfileImage.Source = new BitmapImage(new Uri(ProfileImagePath));
             }
         }
+        
 
         private string GetUserTitle(long userId)
         {

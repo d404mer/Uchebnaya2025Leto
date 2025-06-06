@@ -8,6 +8,8 @@ namespace UCHEBKA.Repos
     public class UserRepository
     {
         private readonly UchebnayaLeto2025Context _db;
+        private const string BaseImagePath = "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\UCHEBKA\\UCHEBKA\\Images\\Users\\";
+
 
         public UserRepository(UchebnayaLeto2025Context db)
         {
@@ -123,6 +125,22 @@ namespace UCHEBKA.Repos
             if (currentUser == null) return null;
 
             return GetUserById(currentUser.Value.userId);
+        }
+
+        public string GetFullImagePath(string fileName)
+        {
+            if (string.IsNullOrEmpty(fileName))
+                return "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\UCHEBKA\\UCHEBKA\\Images\\Events\\2.jpeg";
+
+            var fullPath = $"{BaseImagePath}{fileName}";
+
+            if (!System.IO.File.Exists(fullPath))
+            {
+                Console.WriteLine($"Image not found: {fullPath}");
+                return "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\UCHEBKA\\UCHEBKA\\Images\\Events\\1.jpeg";
+            }
+
+            return fullPath;
         }
     }
 }

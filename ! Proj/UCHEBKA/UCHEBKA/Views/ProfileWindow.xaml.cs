@@ -86,8 +86,11 @@ namespace UCHEBKA.Views
 
             if (openFileDialog.ShowDialog() == true)
             {
-                _tempPhotoPath = openFileDialog.FileName;
-                ProfileImage.Source = new BitmapImage(new Uri(_tempPhotoPath));
+                // Сохраняем ТОЛЬКО имя файла (например, "foto28.jpg")
+                _tempPhotoPath = System.IO.Path.GetFileName(openFileDialog.FileName);
+
+                // Для отображения используем полный путь из диалога
+                ProfileImage.Source = new BitmapImage(new Uri(openFileDialog.FileName));
             }
         }
 
