@@ -1,6 +1,5 @@
 D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\UCHEBKA.csproj.AssemblyReference.cache
 D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\MainWindow.g.cs
-D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\Views\EventCard.g.cs
 D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\App.g.cs
 D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\UCHEBKA_MarkupCompile.cache
 D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\UCHEBKA_MarkupCompile.lref
@@ -134,7 +133,6 @@ D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\bin\Debug\net8.0-windows\run
 D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\bin\Debug\net8.0-windows\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\MainWindow.baml
-D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\Views\EventCard.baml
 D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\UCHEBKA.g.resources
 D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\UCHEBKA.GeneratedMSBuildEditorConfig.editorconfig
 D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\UCHEBKA.AssemblyInfoInputs.cache
@@ -159,3 +157,13 @@ D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\Vie
 D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\Views\ParticipantWindow.baml
 D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\Views\ProfileWindow.baml
 D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\Views\ProfileWindow.g.cs
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\Views\Helpers\EventCard.g.cs
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\Views\Helpers\EventsDatagrid.g.cs
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\Views\Helpers\EventCard.baml
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\Views\Helpers\EventsDatagrid.baml
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\Views\Helpers\EventEditWindow.g.cs
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\Views\Helpers\EventEditWindow.baml
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\Views\Helpers\ParticipantsDatagrid.g.cs
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\Views\Helpers\ParticipantsDatagrid.baml
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\Views\Helpers\JuryDaragrid.g.cs
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\Views\Helpers\JuryDaragrid.baml

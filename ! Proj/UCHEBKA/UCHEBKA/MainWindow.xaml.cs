@@ -53,7 +53,6 @@ namespace UCHEBKA
             if (_currentUser == null)
             {
                 ShowAuthWindow();
-                this.Close();
             }
         }
 
@@ -93,10 +92,8 @@ namespace UCHEBKA
             AuthWindow authWindow = new AuthWindow();
             authWindow.Closed += (s, args) =>
             {
-                // После закрытия окна авторизации проверяем, был ли успешный вход
                 if (authWindow.DialogResult == true)
                 {
-                    // Закрываем главное окно
                     this.Close();
                 }
             };

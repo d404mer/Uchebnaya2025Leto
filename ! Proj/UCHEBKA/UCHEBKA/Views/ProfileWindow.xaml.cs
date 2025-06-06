@@ -11,16 +11,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using UCHEBKA.Models;
-using UCHEBKA.Repos;
+using UCHEBKA.Views.Helpers;
 
 namespace UCHEBKA.Views
 {
@@ -144,6 +141,16 @@ namespace UCHEBKA.Views
         {
             DialogResult = false;
             Close();
+        }
+
+        private void LogoutBtn_Click(object sender, RoutedEventArgs e)
+        {
+            var parentWindow = this.Owner;
+            MainWindow mainWindow = new MainWindow();
+            _userRepo.Logout();
+            this.Close();
+            mainWindow.Show();
+            parentWindow?.Close();
         }
     }
 }

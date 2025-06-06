@@ -80,6 +80,16 @@
             </StackPanel>
         </ScrollViewer>
 
+
+        <DockPanel HorizontalAlignment="Left" Grid.Row="2" >
+            <Button 
+                x:Name="LogoutBtn" 
+                Content="Выйти из аккаунта" 
+                DockPanel.Dock="Left" 
+                Width="150" 
+                Margin="5" Click="LogoutBtn_Click"/>
+        </DockPanel>
+        
         <!-- Кнопки управления -->
         <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right">
             <Button Content="Сохранить" Width="100" Margin="5" Click="Save_Click"/>

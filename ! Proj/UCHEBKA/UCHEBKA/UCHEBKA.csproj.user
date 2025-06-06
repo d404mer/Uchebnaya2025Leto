@@ -10,6 +10,18 @@
     <Compile Update="Views\AdminWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\Helpers\EventEditWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Helpers\EventsDatagrid.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Helpers\JuryDaragrid.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Helpers\ParticipantsDatagrid.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\JuryWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -19,7 +31,7 @@
     <Compile Update="Views\ParticipantWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\EventCard.xaml.cs">
+    <Compile Update="Views\Helpers\EventCard.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\ProfileWindow.xaml.cs">
@@ -30,7 +42,7 @@
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\EventCard.xaml">
+    <Page Update="Views\Helpers\EventCard.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

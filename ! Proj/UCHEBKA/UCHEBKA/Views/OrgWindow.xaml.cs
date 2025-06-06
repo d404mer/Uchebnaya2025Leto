@@ -3,6 +3,7 @@ using System.Windows;
 using UCHEBKA.Repos;
 using UCHEBKA.Models;
 using UCHEBKA.Views;
+using UCHEBKA.Views.Helpers;
 
 namespace UCHEBKA
 {
@@ -84,22 +85,28 @@ namespace UCHEBKA
             {
                 MessageBox.Show("Не удалось загрузить данные пользователя", "Ошибка",
                               MessageBoxButton.OK, MessageBoxImage.Error);
+                MainWindow mainWindow = new MainWindow();
+                mainWindow.Show();
+                this.Close();
             }
         }
 
         private void EventsBtn_Click(object sender, RoutedEventArgs e)
         {
-            // Логика для кнопки мероприятий
+            EventsDatagrid eventsDatagrid = new EventsDatagrid();
+            eventsDatagrid.Show();
         }
 
         private void PartiBtn_Click(object sender, RoutedEventArgs e)
         {
-            // Логика для кнопки участников
+            ParticipantsDatagrid participantsDatagrid = new ParticipantsDatagrid();
+            participantsDatagrid.Show();
         }
 
         private void JuryBtn_Click(object sender, RoutedEventArgs e)
         {
-            // Логика для кнопки жюри
+            JuryDaragrid juryDaragrid = new JuryDaragrid();
+            juryDaragrid.Show();
         }
     }
 }

@@ -5,6 +5,7 @@ using System.Windows.Media;
 using System.Windows.Shapes;
 using UCHEBKA.Repos;
 using UCHEBKA.Models;
+using System.Windows.Threading;
 
 namespace UCHEBKA
 {
@@ -15,6 +16,9 @@ namespace UCHEBKA
         private readonly UserRepository _usRepo;
         private User _currUser;
 
+
+        private static DateTime? _blockTime = null;
+        private static int _failedAttempts = 0;
         public AuthWindow()
         {
             var db = new UchebnayaLeto2025Context();
@@ -25,7 +29,6 @@ namespace UCHEBKA
             GenerateNewCaptcha();
             this.Loaded += (s, e) => GenerateNewCaptcha();
 
-            //TryAutoLog();
             
         }
 
@@ -129,11 +132,28 @@ namespace UCHEBKA
 
         private void LoginButton_Click(object sender, RoutedEventArgs e)
         {
+            // Проверяем блокировку
+            if (_blockTime.HasValue)
+            {
+                var remainingTime = (DateTime.Now - _blockTime.Value).TotalSeconds;
+                if (remainingTime < 10)
+                {
+                    MessageBox.Show($"Система заблокирована. Попробуйте через {10 - (int)remainingTime} секунд",
+                                  "Блокировка", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    return;
+                }
+                else
+                {
+                    // Разблокируем после 10 секунд
+                    _blockTime = null;
+                    _failedAttempts = 0;
+                }
+            }
+
             // CAPTCHA
             if (CaptchaInput.Text != currentCaptcha)
             {
-                MessageBox.Show("Неверная CAPTCHA! Введите показанные цифры.",
-                    "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
+                HandleFailedAttempt("Неверная CAPTCHA! Введите показанные цифры.");
                 GenerateNewCaptcha();
                 CaptchaInput.Clear();
                 return;
@@ -142,16 +162,14 @@ namespace UCHEBKA
             // ID
             if (!int.TryParse(UserIDTextBox.Text, out int userId))
             {
-                MessageBox.Show("Некорректный ID пользователя. Введите число.",
-                    "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
+                HandleFailedAttempt("Некорректный ID пользователя. Введите число.");
                 return;
             }
 
             // пароль
             if (string.IsNullOrWhiteSpace(UserPasswordBox.Password))
             {
-                MessageBox.Show("Введите пароль.", "Ошибка",
-                    MessageBoxButton.OK, MessageBoxImage.Warning);
+                HandleFailedAttempt("Введите пароль.");
                 return;
             }
 
@@ -160,35 +178,83 @@ namespace UCHEBKA
                 _currUser = _usRepo.Auth(userId, UserPasswordBox.Password);
                 if (_currUser == null)
                 {
-                    MessageBox.Show("Неверные учетные данные");
+                    HandleFailedAttempt("Неверные учетные данные");
                     return;
                 }
 
+                // Успешная авторизация - сбрасываем счетчик
+                _failedAttempts = 0;
                 _usRepo.SaveCurrentUser(userId, UserPasswordBox.Password);
                 OpenRoleBasedWindow();
+                DialogResult = true;
                 this.Close();
             }
             catch
             {
-                MessageBox.Show("Нffffff");
+                HandleFailedAttempt("Ошибка при авторизации");
                 return;
             }
-
         }
 
-        private void TryAutoLog()
+        private void HandleFailedAttempt(string errorMessage)
         {
-            var cred = _usRepo.GetCurrentUser();
-            if (cred != null)
-            {
-                var (userId, password) = cred.Value;
-                _currUser = _usRepo.Auth(userId, password);
+            _failedAttempts++;
 
-                if (_currUser != null)
-                {
-                    OpenRoleBasedWindow();
-                }
+            if (_failedAttempts >= 3)
+            {
+                _blockTime = DateTime.Now;
+                MessageBox.Show($"{errorMessage}\n\nСлишком много попыток. Система заблокирована на 10 секунд.",
+                              "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
+                BlockUI();
+                StartUnlockTimer();
             }
+            else
+            {
+                MessageBox.Show($"{errorMessage}\n\nОсталось попыток: {3 - _failedAttempts}",
+                              "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
+            }
+        }
+
+        private void BlockUI()
+        {
+            LogINButton.IsEnabled = false;
+            UserIDTextBox.IsEnabled = false;
+            UserPasswordBox.IsEnabled = false;
+            CaptchaInput.IsEnabled = false;
+            RefreshCaptchaButton.IsEnabled = false;
+            BlockTimerText.Visibility = Visibility.Visible;
+            BlockTimerText.Text = $"Система заблокирована на 10 секунд";
+        }
+
+        private void UnblockUI()
+        {
+            LogINButton.IsEnabled = true;
+            UserIDTextBox.IsEnabled = true;
+            UserPasswordBox.IsEnabled = true;
+            CaptchaInput.IsEnabled = true;
+            RefreshCaptchaButton.IsEnabled = true;
+            GenerateNewCaptcha();
+        }
+
+        private void StartUnlockTimer()
+        {
+            var timer = new DispatcherTimer { Interval = TimeSpan.FromSeconds(1) };
+            int secondsLeft = 10;
+
+            timer.Tick += (s, args) =>
+            {
+                secondsLeft--;
+                BlockTimerText.Text = $"Система заблокирована. До разблокировки: {secondsLeft} сек.";
+
+                if (secondsLeft <= 0)
+                {
+                    timer.Stop();
+                    UnblockUI();
+                    BlockTimerText.Visibility = Visibility.Collapsed;
+                }
+            };
+
+            timer.Start();
         }
 
         private void OpenRoleBasedWindow()
@@ -222,6 +288,12 @@ namespace UCHEBKA
                 CaptchaInput.Text = "Введите каптчу";
                 CaptchaInput.Foreground = Brushes.Gray;
             }
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            DialogResult = false;
+            Close();
         }
     }
 }
