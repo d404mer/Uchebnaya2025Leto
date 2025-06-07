@@ -7,7 +7,25 @@
         mc:Ignorable="d"
         Title="JuryDaragrid" Height="450" Width="800">
     <Grid>
-        <DataGrid x:Name="UsersWithRole4DataGrid" 
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Button 
+    HorizontalAlignment="Left" 
+    VerticalAlignment="Center" 
+    Content="←" 
+    Width="100" 
+    Margin="5, 0, 0, 10" 
+    Height="20" Click="Button_Click" />
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,0,0,10">
+            <Button Content="Обновить" Width="100" Margin="5" Click="RefreshButton_Click"/>
+            <Button Content="Добавить" Width="100" Margin="5" Click="AddButton_Click"/>
+        </StackPanel>
+
+        <DataGrid Grid.Row="1" x:Name="UsersWithRole4DataGrid" 
        AutoGenerateColumns="False"
        IsReadOnly="True"
        SelectionMode="Single"

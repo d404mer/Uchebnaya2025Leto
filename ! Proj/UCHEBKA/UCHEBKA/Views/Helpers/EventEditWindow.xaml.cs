@@ -1,29 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+using Microsoft.Win32;
 using UCHEBKA.Models;
 using UCHEBKA.Repos;
 
 namespace UCHEBKA.Views.Helpers
 {
-    /// <summary>
-    /// Логика взаимодействия для EventEditWindow.xaml
-    /// </summary>
     public partial class EventEditWindow : Window
     {
         private readonly EventRepository _eventRepo;
         private Event _currentEvent;
         private bool _isNewEvent;
+        private string _selectedImagePath;
 
         public EventEditWindow(Event eventToEdit)
         {
@@ -37,6 +27,7 @@ namespace UCHEBKA.Views.Helpers
                 _currentEvent = new Event();
                 _isNewEvent = true;
                 Title = "Создание нового мероприятия";
+                DeleteButton.IsEnabled = false;
             }
             else
             {
@@ -58,9 +49,17 @@ namespace UCHEBKA.Views.Helpers
 
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(EventTitleTextBox.Text) ||
+                string.IsNullOrWhiteSpace(EventDurationTextBox.Text) ||
+                EventStartTimePicker.SelectedDate == null)
+            {
+                MessageBox.Show("Пожалуйста, заполните все обязательные поля", "Ошибка",
+                              MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+
             try
             {
-                // Обновление данных мероприятия
                 _currentEvent.EventTitle = EventTitleTextBox.Text;
                 _currentEvent.EventStartTime = EventStartTimePicker.SelectedDate;
 
@@ -73,10 +72,26 @@ namespace UCHEBKA.Views.Helpers
                     _currentEvent.EventDuration = null;
                 }
 
-                _currentEvent.EventLogoUrl = EventLogoUrlTextBox.Text;
+                // Если выбрано новое изображение, сохраняем только имя файла
+                if (!string.IsNullOrEmpty(_selectedImagePath))
+                {
+                    _currentEvent.EventLogoUrl = Path.GetFileName(_selectedImagePath);
+                }
+                else if (string.IsNullOrEmpty(_currentEvent.EventLogoUrl))
+                {
+                    _currentEvent.EventLogoUrl = null;
+                }
 
-                // Здесь нужно добавить логику сохранения в базу данных
-                // Пока просто закрываем окно с DialogResult = true
+                if (_isNewEvent)
+                {
+                    _currentEvent.EventId = _eventRepo.GetNextEventId();
+                    _eventRepo.AddEvent(_currentEvent);
+                }
+                else
+                {
+                    _eventRepo.UpdateEvent(_currentEvent);
+                }
+
                 DialogResult = true;
                 Close();
             }
@@ -91,6 +106,55 @@ namespace UCHEBKA.Views.Helpers
         {
             DialogResult = false;
             Close();
+        }
+
+        private void DeleteButton_Click(object sender, RoutedEventArgs e)
+        {
+            var result = MessageBox.Show(
+                $"Вы уверены, что хотите удалить мероприятие '{_currentEvent.EventTitle}'?",
+                "Подтверждение удаления",
+                MessageBoxButton.YesNo,
+                MessageBoxImage.Warning);
+
+            if (result == MessageBoxResult.Yes)
+            {
+                try
+                {
+                    bool success = _eventRepo.DeleteEvent(_currentEvent.EventId);
+                    if (success)
+                    {
+                        MessageBox.Show("Мероприятие успешно удалено", "Успех",
+                                      MessageBoxButton.OK, MessageBoxImage.Information);
+                        DialogResult = true;
+                        Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Не удалось найти мероприятие для удаления", "Ошибка",
+                                      MessageBoxButton.OK, MessageBoxImage.Error);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Ошибка при удалении мероприятия: {ex.Message}",
+                                  "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+            }
+        }
+
+        private void SelectImageButton_Click(object sender, RoutedEventArgs e)
+        {
+            var openFileDialog = new OpenFileDialog
+            {
+                Filter = "Image files (*.jpg, *.jpeg, *.png)|*.jpg;*.jpeg;*.png|All files (*.*)|*.*",
+                Title = "Выберите логотип мероприятия"
+            };
+
+            if (openFileDialog.ShowDialog() == true)
+            {
+                _selectedImagePath = openFileDialog.FileName;
+                EventLogoUrlTextBox.Text = Path.GetFileName(_selectedImagePath);
+            }
         }
     }
 }

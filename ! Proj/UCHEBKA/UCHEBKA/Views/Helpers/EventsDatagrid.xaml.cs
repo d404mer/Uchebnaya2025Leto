@@ -53,28 +53,32 @@ namespace UCHEBKA.Views
         private void AddButton_Click(object sender, RoutedEventArgs e)
         {
             // Логика добавления нового мероприятия
-            //var editWindow = new EventEditWindow(null); // null означает создание нового
-            //editWindow.ShowDialog();
+            var editWindow = new EventEditWindow(null); // null означает создание нового
+            editWindow.ShowDialog();
 
-            //if (editWindow.DialogResult == true)
-            //{
-            //    LoadEvents(); // Обновляем список после добавления
-            //}
+            if (editWindow.DialogResult == true)
+            {
+                LoadEvents(); // Обновляем список после добавления
+            }
         }
 
         private void EventsDataGrid_MouseDoubleClick(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
             if (EventsDataGrid.SelectedItem is Event selectedEvent)
             {
-                // Открываем окно редактирования с выбранным мероприятием
                 var editWindow = new EventEditWindow(selectedEvent);
                 editWindow.ShowDialog();
 
                 if (editWindow.DialogResult == true)
                 {
-                    LoadEvents(); // Обновляем список после изменений
+                    LoadEvents();
                 }
             }
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

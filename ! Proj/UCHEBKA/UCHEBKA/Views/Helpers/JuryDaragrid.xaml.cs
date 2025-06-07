@@ -48,5 +48,20 @@ namespace UCHEBKA.Views.Helpers
                               "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
+
+        private void RefreshButton_Click(object sender, RoutedEventArgs e)
+        {
+            LoadUsersWithRole4();
+        }
+
+        private void AddButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

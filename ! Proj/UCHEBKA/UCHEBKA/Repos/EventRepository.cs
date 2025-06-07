@@ -75,10 +75,52 @@ namespace UCHEBKA.Repos
             if (!System.IO.File.Exists(fullPath))
             {
                 Console.WriteLine($"Image not found: {fullPath}");
-                return "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\UCHEBKA\\UCHEBKA\\Images\\Events\\1.jpeg";
+                return "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\UCHEBKA\\UCHEBKA\\Images\\Events\\no pic.png";
             }
 
             return fullPath;
+        }
+
+        public void AddEvent(Event newEvent)
+        {
+            _db.Events.Add(newEvent);
+            _db.SaveChanges();
+        }
+
+        public void UpdateEvent(Event eventToUpdate)
+        {
+            _db.Events.Update(eventToUpdate);
+            _db.SaveChanges();
+        }
+        public long GetNextEventId()
+        {
+            return _db.Events.Any() ? _db.Events.Max(e => e.EventId) + 1 : 1;
+        }
+
+        public bool DeleteEvent(long eventId)
+        {
+            try
+            {
+                var eventToDelete = _db.Events.Find(eventId);
+                if (eventToDelete != null)
+                {
+                    // Удаляем связанные записи (если нужно)
+                    _db.ActivityEvents.RemoveRange(_db.ActivityEvents.Where(ae => ae.FkEventId == eventId));
+                    _db.SectionEvents.RemoveRange(_db.SectionEvents.Where(se => se.FkEventId == eventId));
+                    // Добавьте другие связанные таблицы при необходимости
+
+                    _db.Events.Remove(eventToDelete);
+                    _db.SaveChanges();
+                    return true;
+                }
+                return false;
+            }
+            catch (Exception ex)
+            {
+                // Логирование ошибки
+                Console.WriteLine($"Ошибка при удалении мероприятия: {ex.Message}");
+                return false;
+            }
         }
     }
 }

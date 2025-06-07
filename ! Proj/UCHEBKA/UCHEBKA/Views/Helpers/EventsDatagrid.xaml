@@ -13,6 +13,14 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
+        <Button 
+            HorizontalAlignment="Left" 
+            VerticalAlignment="Center" 
+            Content="←" 
+            Width="100" 
+            Margin="5, 0, 0, 10" 
+            Height="20" Click="Button_Click" />
+        
         <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,0,0,10">
             <Button Content="Обновить" Width="100" Margin="5" Click="RefreshButton_Click"/>
             <Button Content="Добавить" Width="100" Margin="5" Click="AddButton_Click"/>
@@ -26,9 +34,9 @@
                  MouseDoubleClick="EventsDataGrid_MouseDoubleClick">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="ID" Binding="{Binding EventId}" Width="Auto"/>
-                <DataGridTextColumn Header="Название"  Binding="{Binding EventTitle}" Width="*"/>
+                <DataGridTextColumn Header="Название"  Binding="{Binding EventTitle}" MinWidth="350" Width="*"/>
                 <DataGridTextColumn Header="Дата начала" Binding="{Binding EventStartTime, StringFormat={}{0:dd.MM.yyyy HH:mm}}" Width="Auto"/>
-                <DataGridTextColumn Header="Количество дней" Binding="{Binding EventDuration}" Width="Auto"/>
+                <DataGridTextColumn Header="Кол-во дней" Binding="{Binding EventDuration}" Width="Auto"/>
                 <DataGridTextColumn Header="Лого" Binding="{Binding EventLogoUrl}" Width="Auto"/>
             </DataGrid.Columns>
         </DataGrid>
