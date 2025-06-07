@@ -76,7 +76,7 @@ namespace UCHEBKA
                     Activity = ae.FkActivity,
                     Day = ae.Day,
                     StartTime = ae.StartTime,
-                    Rating = ae.FkActivity?.ActivityScore ?? 0
+                    // Инициализируем рейтинг из базы данных или 0, если его нет
                 }).ToList();
 
             _activitiesToRate = new ObservableCollection<ActivityRatingViewModel>(activities);
@@ -85,26 +85,39 @@ namespace UCHEBKA
 
         private void RatingComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if (e.AddedItems.Count > 0 && ActivitiesListView.SelectedItem is ActivityRatingViewModel selectedActivity)
-            {
-                try
-                {
-                    var activity = _db.Activities
-                        .FirstOrDefault(a => a.ActivityId == selectedActivity.Activity.ActivityId);
+            var comboBox = sender as ComboBox;
+            if (comboBox?.SelectedItem == null) return;
 
-                    if (activity != null)
-                    {
-                        activity.ActivityScore = selectedActivity.Rating;
-                        _db.SaveChanges();
-                        MessageBox.Show("Оценка сохранена успешно!", "Успех",
-                                      MessageBoxButton.OK, MessageBoxImage.Information);
-                    }
-                }
-                catch (Exception ex)
+            var selectedActivity = comboBox.DataContext as ActivityRatingViewModel;
+            if (selectedActivity == null || selectedActivity.Activity == null) return;
+
+            try
+            {
+                // Находим активность в базе данных
+                var activity = _db.Activities
+                    .FirstOrDefault(a => a.ActivityId == selectedActivity.Activity.ActivityId);
+
+                if (activity != null)
                 {
-                    MessageBox.Show($"Ошибка при сохранении оценки: {ex.Message}", "Ошибка",
+                    // Обновляем оценку активности
+                    activity.ActivityScore = selectedActivity.Rating;
+
+                    // Сохраняем изменения
+                    _db.SaveChanges();
+
+                    MessageBox.Show("Оценка сохранена успешно!", "Успех",
+                                  MessageBoxButton.OK, MessageBoxImage.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Активность не найдена в базе данных", "Ошибка",
                                   MessageBoxButton.OK, MessageBoxImage.Error);
                 }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ошибка при сохранении оценки: {ex.Message}", "Ошибка",
+                              MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
     }
