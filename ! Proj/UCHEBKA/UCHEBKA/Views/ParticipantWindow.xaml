@@ -46,16 +46,54 @@
 
 
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="61*"/>
+            <RowDefinition Height="373*"/>
+        </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="119*"/>
             <ColumnDefinition Width="281*"/>
         </Grid.ColumnDefinitions>
+
+        <TextBlock
+             Text="Окно участника"
+             Style="{StaticResource HeaderTextStyle}" 
+            Grid.Column="1"
+            HorizontalAlignment="Left" 
+            Margin="46,10,0,10" 
+            Grid.RowSpan="2" 
+            Width="233"/>
+
+        <StackPanel 
+            Grid.Row="1" 
+            Grid.Column="1" 
+            VerticalAlignment="Top"
+            HorizontalAlignment="Center"
+            Height="Auto">
+            
+            <TextBlock x:Name="GoodText"/>
+            <TextBlock x:Name="MrMrsText"/>
+            
+        </StackPanel>
         
         
         <StackPanel 
-            Grid.Column="0"
+            Margin="10"
+            Height="Auto"
+            HorizontalAlignment="Center" 
+            VerticalAlignment="Center" 
+            Grid.Column="1" 
+            Grid.Row="2">
+                <TextBlock x:Name="IdTextBlock" Text="ID: "/>
+                <TextBlock x:Name="FullNameTextBlock" Text="ФИО: "/>
+                <TextBlock x:Name="EmailTextBlock" Text="Почта: "/>
+                <TextBlock x:Name="BirthDateTextBlock" Text="Дата рождения: "/>
+                <TextBlock x:Name="PhoneTextBlock" Text="Телефонный номер: "/>
+        </StackPanel>
+
+        <StackPanel
             Style="{StaticResource CenterPanelStyle}"
-            Margin="10,10,10,10">
+            Margin="0,1,0,0" VerticalAlignment="Top" Height="320" Grid.Row="1" Width="150">
             <Border Style="{StaticResource ImageBorderStyle}">
                 <Image x:Name="ProfileImage"
                 HorizontalAlignment="Center"

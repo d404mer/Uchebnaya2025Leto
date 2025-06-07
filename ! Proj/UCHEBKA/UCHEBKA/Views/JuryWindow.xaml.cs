@@ -1,41 +1,35 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 using UCHEBKA.Models;
 using UCHEBKA.Repos;
 using UCHEBKA.Views;
+using System.Collections.ObjectModel;
+using System.Windows.Media.Imaging;
+using Microsoft.EntityFrameworkCore;
 
 namespace UCHEBKA
 {
-    /// <summary>
-    /// Логика взаимодействия для JuryWindow.xaml
-    /// </summary>
     public partial class JuryWindow : Window
     {
         private readonly UserRepository _usRepo;
+        private readonly ActivityRepository _activityRepo;
         private readonly UchebnayaLeto2025Context _db;
         private User _currentUser;
+        private ObservableCollection<ActivityRatingViewModel> _activitiesToRate;
 
         public JuryWindow()
         {
             InitializeComponent();
-
             _db = new UchebnayaLeto2025Context();
             _usRepo = new UserRepository(_db);
+            _activityRepo = new ActivityRepository(_db);
 
             LoadUserData();
+            LoadActivities();
         }
-
 
         private void ProfileBtn_Click(object sender, RoutedEventArgs e)
         {
@@ -45,7 +39,6 @@ namespace UCHEBKA
                 var profileWindow = new ProfileWindow(_usRepo);
                 profileWindow.Owner = this;
                 profileWindow.ShowDialog();
-
                 LoadUserData();
             }
             else
@@ -58,19 +51,71 @@ namespace UCHEBKA
             }
         }
 
-                 private void LoadUserData()
+        private void LoadUserData()
         {
             var currentUser = _usRepo.GetCurrentUser();
-
             if (currentUser != null)
             {
                 _currentUser = _usRepo.Auth(currentUser.Value.userId, currentUser.Value.password);
-
                 string imageName = _currentUser.UserPhoto;
                 var ProfileImagePath = _usRepo.GetFullImagePath(imageName);
-
                 ProfileImage.Source = new BitmapImage(new Uri(ProfileImagePath));
+                DataContext = this;
             }
         }
+
+        private void LoadActivities()
+        {
+            if (_currentUser == null) return;
+
+            var activities = _activityRepo.GetActivitiesForJury(_currentUser.UserId)
+                .Select(ae => new ActivityRatingViewModel
+                {
+                    ActivityEventId = ae.ActivityEventId,
+                    Event = ae.FkEvent,
+                    Activity = ae.FkActivity,
+                    Day = ae.Day,
+                    StartTime = ae.StartTime,
+                    Rating = ae.FkActivity?.ActivityScore ?? 0
+                }).ToList();
+
+            _activitiesToRate = new ObservableCollection<ActivityRatingViewModel>(activities);
+            ActivitiesListView.ItemsSource = _activitiesToRate;
+        }
+
+        private void RatingComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (e.AddedItems.Count > 0 && ActivitiesListView.SelectedItem is ActivityRatingViewModel selectedActivity)
+            {
+                try
+                {
+                    var activity = _db.Activities
+                        .FirstOrDefault(a => a.ActivityId == selectedActivity.Activity.ActivityId);
+
+                    if (activity != null)
+                    {
+                        activity.ActivityScore = selectedActivity.Rating;
+                        _db.SaveChanges();
+                        MessageBox.Show("Оценка сохранена успешно!", "Успех",
+                                      MessageBoxButton.OK, MessageBoxImage.Information);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Ошибка при сохранении оценки: {ex.Message}", "Ошибка",
+                                  MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+            }
+        }
+    }
+
+    public class ActivityRatingViewModel
+    {
+        public long ActivityEventId { get; set; }
+        public Event Event { get; set; }
+        public Activity Activity { get; set; }
+        public int? Day { get; set; }
+        public DateTime? StartTime { get; set; }
+        public int Rating { get; set; }
     }
 }

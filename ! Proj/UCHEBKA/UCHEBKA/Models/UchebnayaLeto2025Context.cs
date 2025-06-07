@@ -71,6 +71,7 @@ public partial class UchebnayaLeto2025Context : DbContext
                 .ValueGeneratedNever()
                 .HasColumnName("Activity_ID");
             entity.Property(e => e.ActivityName).HasColumnName("Activity_Name");
+            entity.Property(e => e.ActivityScore).HasColumnName("Activity_Score");
         });
 
         modelBuilder.Entity<ActivityEvent>(entity =>
