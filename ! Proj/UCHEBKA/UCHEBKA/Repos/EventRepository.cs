@@ -75,7 +75,7 @@ namespace UCHEBKA.Repos
             if (!System.IO.File.Exists(fullPath))
             {
                 Console.WriteLine($"Image not found: {fullPath}");
-                return "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\UCHEBKA\\UCHEBKA\\Images\\Events\\no pic.png";
+                //return "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\UCHEBKA\\UCHEBKA\\Images\\Events\\no pic.png";
             }
 
             return fullPath;
@@ -104,10 +104,8 @@ namespace UCHEBKA.Repos
                 var eventToDelete = _db.Events.Find(eventId);
                 if (eventToDelete != null)
                 {
-                    // Удаляем связанные записи (если нужно)
                     _db.ActivityEvents.RemoveRange(_db.ActivityEvents.Where(ae => ae.FkEventId == eventId));
                     _db.SectionEvents.RemoveRange(_db.SectionEvents.Where(se => se.FkEventId == eventId));
-                    // Добавьте другие связанные таблицы при необходимости
 
                     _db.Events.Remove(eventToDelete);
                     _db.SaveChanges();
