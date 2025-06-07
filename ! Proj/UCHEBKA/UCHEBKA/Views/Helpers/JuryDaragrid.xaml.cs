@@ -56,7 +56,8 @@ namespace UCHEBKA.Views.Helpers
 
         private void AddButton_Click(object sender, RoutedEventArgs e)
         {
-
+            RegistrattionWindow registrattionWindow = new RegistrattionWindow();
+            registrattionWindow.Show();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

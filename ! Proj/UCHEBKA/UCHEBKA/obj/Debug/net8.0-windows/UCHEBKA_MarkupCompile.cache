@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\App.xaml
-13-415282138
+141533672243
 
-411350813093
+441411982872
 2281211604773
-MainWindow.xaml;Views\AdminWindow.xaml;Views\AuthWindow.xaml;Views\Helpers\EventCard.xaml;Views\Helpers\EventEditWindow.xaml;Views\Helpers\EventsDatagrid.xaml;Views\Helpers\JuryDaragrid.xaml;Views\Helpers\ParticipantsDatagrid.xaml;Views\JuryWindow.xaml;Views\OrgWindow.xaml;Views\ParticipantWindow.xaml;Views\ProfileWindow.xaml;Views\UserEditWindow.xaml;
+MainWindow.xaml;Views\AdminWindow.xaml;Views\AuthWindow.xaml;Views\Helpers\EventCard.xaml;Views\Helpers\EventEditWindow.xaml;Views\Helpers\EventsDatagrid.xaml;Views\Helpers\JuryDaragrid.xaml;Views\Helpers\ParticipantsDatagrid.xaml;Views\JuryWindow.xaml;Views\OrgWindow.xaml;Views\ParticipantWindow.xaml;Views\ProfileWindow.xaml;Views\RegistrattionWindow.xaml;Views\UserEditWindow.xaml;
 
 False
 

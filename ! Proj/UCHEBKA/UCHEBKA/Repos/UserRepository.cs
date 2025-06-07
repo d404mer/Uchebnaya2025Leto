@@ -8,7 +8,7 @@ namespace UCHEBKA.Repos
     public class UserRepository
     {
         private readonly UchebnayaLeto2025Context _db;
-        private const string BaseImagePath = "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\UCHEBKA\\UCHEBKA\\Images\\Users\\";
+        public const string BaseImagePath = "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\UCHEBKA\\UCHEBKA\\Images\\Users\\";
 
 
         public UserRepository(UchebnayaLeto2025Context db)
@@ -142,5 +142,37 @@ namespace UCHEBKA.Repos
 
             return fullPath;
         }
+
+        public long GetNextUserId()
+        {
+            return _db.Users.Any() ? _db.Users.Max(u => u.UserId) + 1 : 1;
+        }
+
+        public void AddUser(User user)
+        {
+            _db.Users.Add(user);
+            _db.SaveChanges();
+        }
+
+        public void AddUserRole(long userId, long roleId)
+        {
+            _db.UserRoles.Add(new UserRole
+            {
+                FkUserId = userId,
+                FkRoleId = roleId
+            });
+            _db.SaveChanges();
+        }
+
+        public void AddUserEvent(long userId, long eventId)
+        {
+            _db.UserEvents.Add(new UserEvent
+            {
+                FkUserId = userId,
+                FkEventId = eventId
+            });
+            _db.SaveChanges();
+        }
+
     }
 }
