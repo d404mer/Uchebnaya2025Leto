@@ -167,3 +167,4 @@ D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\Vie
 D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\Views\Helpers\ParticipantsDatagrid.baml
 D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\Views\Helpers\JuryDaragrid.g.cs
 D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\Views\Helpers\JuryDaragrid.baml
+D:\CIT KAI\Uchebnaya2025Leto\! Proj\UCHEBKA\UCHEBKA\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs

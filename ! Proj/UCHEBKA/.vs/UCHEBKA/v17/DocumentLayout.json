@@ -3,32 +3,64 @@
   "WorkspaceRootPath": "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\UCHEBKA\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FDF22A72-A742-4139-B2E3-6BD53E8005F4}|UCHEBKA\\UCHEBKA.csproj|d:\\cit kai\\uchebnaya2025leto\\! proj\\uchebka\\uchebka\\views\\jurywindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{FDF22A72-A742-4139-B2E3-6BD53E8005F4}|UCHEBKA\\UCHEBKA.csproj|solutionrelative:uchebka\\views\\jurywindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{FDF22A72-A742-4139-B2E3-6BD53E8005F4}|UCHEBKA\\UCHEBKA.csproj|d:\\cit kai\\uchebnaya2025leto\\! proj\\uchebka\\uchebka\\views\\helpers\\eventcard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDF22A72-A742-4139-B2E3-6BD53E8005F4}|UCHEBKA\\UCHEBKA.csproj|solutionrelative:uchebka\\views\\helpers\\eventcard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FDF22A72-A742-4139-B2E3-6BD53E8005F4}|UCHEBKA\\UCHEBKA.csproj|d:\\cit kai\\uchebnaya2025leto\\! proj\\uchebka\\uchebka\\models\\activity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FDF22A72-A742-4139-B2E3-6BD53E8005F4}|UCHEBKA\\UCHEBKA.csproj|solutionrelative:uchebka\\models\\activity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FDF22A72-A742-4139-B2E3-6BD53E8005F4}|UCHEBKA\\UCHEBKA.csproj|d:\\cit kai\\uchebnaya2025leto\\! proj\\uchebka\\uchebka\\views\\helpers\\eventcard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{FDF22A72-A742-4139-B2E3-6BD53E8005F4}|UCHEBKA\\UCHEBKA.csproj|solutionrelative:uchebka\\views\\helpers\\eventcard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FDF22A72-A742-4139-B2E3-6BD53E8005F4}|UCHEBKA\\UCHEBKA.csproj|d:\\cit kai\\uchebnaya2025leto\\! proj\\uchebka\\uchebka\\views\\participantwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{FDF22A72-A742-4139-B2E3-6BD53E8005F4}|UCHEBKA\\UCHEBKA.csproj|solutionrelative:uchebka\\views\\participantwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{FDF22A72-A742-4139-B2E3-6BD53E8005F4}|UCHEBKA\\UCHEBKA.csproj|d:\\cit kai\\uchebnaya2025leto\\! proj\\uchebka\\uchebka\\repos\\eventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDF22A72-A742-4139-B2E3-6BD53E8005F4}|UCHEBKA\\UCHEBKA.csproj|solutionrelative:uchebka\\repos\\eventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FDF22A72-A742-4139-B2E3-6BD53E8005F4}|UCHEBKA\\UCHEBKA.csproj|d:\\cit kai\\uchebnaya2025leto\\! proj\\uchebka\\uchebka\\views\\profilewindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
-      "RelativeMoniker": "D:0:0:{FDF22A72-A742-4139-B2E3-6BD53E8005F4}|UCHEBKA\\UCHEBKA.csproj|solutionrelative:uchebka\\views\\profilewindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+      "AbsoluteMoniker": "D:0:0:{FDF22A72-A742-4139-B2E3-6BD53E8005F4}|UCHEBKA\\UCHEBKA.csproj|d:\\cit kai\\uchebnaya2025leto\\! proj\\uchebka\\uchebka\\mainwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{FDF22A72-A742-4139-B2E3-6BD53E8005F4}|UCHEBKA\\UCHEBKA.csproj|solutionrelative:uchebka\\mainwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDF22A72-A742-4139-B2E3-6BD53E8005F4}|UCHEBKA\\UCHEBKA.csproj|d:\\cit kai\\uchebnaya2025leto\\! proj\\uchebka\\uchebka\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{FDF22A72-A742-4139-B2E3-6BD53E8005F4}|UCHEBKA\\UCHEBKA.csproj|solutionrelative:uchebka\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDF22A72-A742-4139-B2E3-6BD53E8005F4}|UCHEBKA\\UCHEBKA.csproj|d:\\cit kai\\uchebnaya2025leto\\! proj\\uchebka\\uchebka\\views\\helpers\\converters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDF22A72-A742-4139-B2E3-6BD53E8005F4}|UCHEBKA\\UCHEBKA.csproj|solutionrelative:uchebka\\views\\helpers\\converters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDF22A72-A742-4139-B2E3-6BD53E8005F4}|UCHEBKA\\UCHEBKA.csproj|d:\\cit kai\\uchebnaya2025leto\\! proj\\uchebka\\uchebka\\views\\adminwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{FDF22A72-A742-4139-B2E3-6BD53E8005F4}|UCHEBKA\\UCHEBKA.csproj|solutionrelative:uchebka\\views\\adminwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDF22A72-A742-4139-B2E3-6BD53E8005F4}|UCHEBKA\\UCHEBKA.csproj|d:\\cit kai\\uchebnaya2025leto\\! proj\\uchebka\\uchebka\\views\\adminwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDF22A72-A742-4139-B2E3-6BD53E8005F4}|UCHEBKA\\UCHEBKA.csproj|solutionrelative:uchebka\\views\\adminwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDF22A72-A742-4139-B2E3-6BD53E8005F4}|UCHEBKA\\UCHEBKA.csproj|d:\\cit kai\\uchebnaya2025leto\\! proj\\uchebka\\uchebka\\views\\authwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{FDF22A72-A742-4139-B2E3-6BD53E8005F4}|UCHEBKA\\UCHEBKA.csproj|solutionrelative:uchebka\\views\\authwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDF22A72-A742-4139-B2E3-6BD53E8005F4}|UCHEBKA\\UCHEBKA.csproj|d:\\cit kai\\uchebnaya2025leto\\! proj\\uchebka\\uchebka\\views\\profilewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{FDF22A72-A742-4139-B2E3-6BD53E8005F4}|UCHEBKA\\UCHEBKA.csproj|solutionrelative:uchebka\\views\\profilewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FDF22A72-A742-4139-B2E3-6BD53E8005F4}|UCHEBKA\\UCHEBKA.csproj|d:\\cit kai\\uchebnaya2025leto\\! proj\\uchebka\\uchebka\\views\\orgwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{FDF22A72-A742-4139-B2E3-6BD53E8005F4}|UCHEBKA\\UCHEBKA.csproj|solutionrelative:uchebka\\views\\orgwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FDF22A72-A742-4139-B2E3-6BD53E8005F4}|UCHEBKA\\UCHEBKA.csproj|d:\\cit kai\\uchebnaya2025leto\\! proj\\uchebka\\uchebka\\views\\jurywindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
-      "RelativeMoniker": "D:0:0:{FDF22A72-A742-4139-B2E3-6BD53E8005F4}|UCHEBKA\\UCHEBKA.csproj|solutionrelative:uchebka\\views\\jurywindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+      "AbsoluteMoniker": "D:0:0:{FDF22A72-A742-4139-B2E3-6BD53E8005F4}|UCHEBKA\\UCHEBKA.csproj|d:\\cit kai\\uchebnaya2025leto\\! proj\\uchebka\\uchebka\\views\\jurywindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{FDF22A72-A742-4139-B2E3-6BD53E8005F4}|UCHEBKA\\UCHEBKA.csproj|solutionrelative:uchebka\\views\\jurywindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FDF22A72-A742-4139-B2E3-6BD53E8005F4}|UCHEBKA\\UCHEBKA.csproj|d:\\cit kai\\uchebnaya2025leto\\! proj\\uchebka\\uchebka\\views\\profilewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{FDF22A72-A742-4139-B2E3-6BD53E8005F4}|UCHEBKA\\UCHEBKA.csproj|solutionrelative:uchebka\\views\\profilewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{FDF22A72-A742-4139-B2E3-6BD53E8005F4}|UCHEBKA\\UCHEBKA.csproj|d:\\cit kai\\uchebnaya2025leto\\! proj\\uchebka\\uchebka\\views\\participantwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDF22A72-A742-4139-B2E3-6BD53E8005F4}|UCHEBKA\\UCHEBKA.csproj|solutionrelative:uchebka\\views\\participantwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDF22A72-A742-4139-B2E3-6BD53E8005F4}|UCHEBKA\\UCHEBKA.csproj|d:\\cit kai\\uchebnaya2025leto\\! proj\\uchebka\\uchebka\\models\\activity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDF22A72-A742-4139-B2E3-6BD53E8005F4}|UCHEBKA\\UCHEBKA.csproj|solutionrelative:uchebka\\models\\activity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDF22A72-A742-4139-B2E3-6BD53E8005F4}|UCHEBKA\\UCHEBKA.csproj|d:\\cit kai\\uchebnaya2025leto\\! proj\\uchebka\\uchebka\\views\\jurywindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{FDF22A72-A742-4139-B2E3-6BD53E8005F4}|UCHEBKA\\UCHEBKA.csproj|solutionrelative:uchebka\\views\\jurywindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FDF22A72-A742-4139-B2E3-6BD53E8005F4}|UCHEBKA\\UCHEBKA.csproj|d:\\cit kai\\uchebnaya2025leto\\! proj\\uchebka\\uchebka\\repos\\activityrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -41,10 +73,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{FDF22A72-A742-4139-B2E3-6BD53E8005F4}|UCHEBKA\\UCHEBKA.csproj|d:\\cit kai\\uchebnaya2025leto\\! proj\\uchebka\\uchebka\\repos\\sectionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FDF22A72-A742-4139-B2E3-6BD53E8005F4}|UCHEBKA\\UCHEBKA.csproj|solutionrelative:uchebka\\repos\\sectionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FDF22A72-A742-4139-B2E3-6BD53E8005F4}|UCHEBKA\\UCHEBKA.csproj|d:\\cit kai\\uchebnaya2025leto\\! proj\\uchebka\\uchebka\\repos\\eventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FDF22A72-A742-4139-B2E3-6BD53E8005F4}|UCHEBKA\\UCHEBKA.csproj|solutionrelative:uchebka\\repos\\eventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FDF22A72-A742-4139-B2E3-6BD53E8005F4}|UCHEBKA\\UCHEBKA.csproj|d:\\cit kai\\uchebnaya2025leto\\! proj\\uchebka\\uchebka\\views\\helpers\\jurydaragrid.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -61,14 +89,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{FDF22A72-A742-4139-B2E3-6BD53E8005F4}|UCHEBKA\\UCHEBKA.csproj|d:\\cit kai\\uchebnaya2025leto\\! proj\\uchebka\\uchebka\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FDF22A72-A742-4139-B2E3-6BD53E8005F4}|UCHEBKA\\UCHEBKA.csproj|solutionrelative:uchebka\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FDF22A72-A742-4139-B2E3-6BD53E8005F4}|UCHEBKA\\UCHEBKA.csproj|d:\\cit kai\\uchebnaya2025leto\\! proj\\uchebka\\uchebka\\views\\adminwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{FDF22A72-A742-4139-B2E3-6BD53E8005F4}|UCHEBKA\\UCHEBKA.csproj|solutionrelative:uchebka\\views\\adminwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FDF22A72-A742-4139-B2E3-6BD53E8005F4}|UCHEBKA\\UCHEBKA.csproj|d:\\cit kai\\uchebnaya2025leto\\! proj\\uchebka\\uchebka\\views\\participantwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FDF22A72-A742-4139-B2E3-6BD53E8005F4}|UCHEBKA\\UCHEBKA.csproj|solutionrelative:uchebka\\views\\participantwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -77,12 +97,100 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 14,
+          "DockedWidth": 1596,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EventCard.xaml",
+              "DocumentMoniker": "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\UCHEBKA\\UCHEBKA\\Views\\Helpers\\EventCard.xaml",
+              "RelativeDocumentMoniker": "UCHEBKA\\Views\\Helpers\\EventCard.xaml",
+              "ToolTip": "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\UCHEBKA\\UCHEBKA\\Views\\Helpers\\EventCard.xaml",
+              "RelativeToolTip": "UCHEBKA\\Views\\Helpers\\EventCard.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-07T14:33:58.205Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EventCard.xaml.cs",
+              "DocumentMoniker": "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\UCHEBKA\\UCHEBKA\\Views\\Helpers\\EventCard.xaml.cs",
+              "RelativeDocumentMoniker": "UCHEBKA\\Views\\Helpers\\EventCard.xaml.cs",
+              "ToolTip": "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\UCHEBKA\\UCHEBKA\\Views\\Helpers\\EventCard.xaml.cs",
+              "RelativeToolTip": "UCHEBKA\\Views\\Helpers\\EventCard.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAmwCAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T14:33:41.308Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\UCHEBKA\\UCHEBKA\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "UCHEBKA\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\UCHEBKA\\UCHEBKA\\MainWindow.xaml.cs",
+              "RelativeToolTip": "UCHEBKA\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAJ0AAAAAAAAAAAAmwLIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T14:22:54.498Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\UCHEBKA\\UCHEBKA\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "UCHEBKA\\MainWindow.xaml",
+              "ToolTip": "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\UCHEBKA\\UCHEBKA\\MainWindow.xaml",
+              "RelativeToolTip": "UCHEBKA\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-07T14:22:49.854Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Converters.cs",
+              "DocumentMoniker": "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\UCHEBKA\\UCHEBKA\\Views\\Helpers\\Converters.cs",
+              "RelativeDocumentMoniker": "UCHEBKA\\Views\\Helpers\\Converters.cs",
+              "ToolTip": "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\UCHEBKA\\UCHEBKA\\Views\\Helpers\\Converters.cs",
+              "RelativeToolTip": "UCHEBKA\\Views\\Helpers\\Converters.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAcwC0AAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T14:11:45.133Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AdminWindow.xaml.cs",
+              "DocumentMoniker": "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\UCHEBKA\\UCHEBKA\\Views\\AdminWindow.xaml.cs",
+              "RelativeDocumentMoniker": "UCHEBKA\\Views\\AdminWindow.xaml.cs",
+              "ToolTip": "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\UCHEBKA\\UCHEBKA\\Views\\AdminWindow.xaml.cs",
+              "RelativeToolTip": "UCHEBKA\\Views\\AdminWindow.xaml.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAASwFwAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T14:11:22.333Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "AuthWindow.xaml",
+              "DocumentMoniker": "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\UCHEBKA\\UCHEBKA\\Views\\AuthWindow.xaml",
+              "RelativeDocumentMoniker": "UCHEBKA\\Views\\AuthWindow.xaml",
+              "ToolTip": "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\UCHEBKA\\UCHEBKA\\Views\\AuthWindow.xaml",
+              "RelativeToolTip": "UCHEBKA\\Views\\AuthWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-07T14:01:14.312Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "Event.cs",
               "DocumentMoniker": "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\UCHEBKA\\UCHEBKA\\Models\\Event.cs",
               "RelativeDocumentMoniker": "UCHEBKA\\Models\\Event.cs",
@@ -94,7 +202,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 17,
               "Title": "SectionRepository.cs",
               "DocumentMoniker": "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\UCHEBKA\\UCHEBKA\\Repos\\SectionRepository.cs",
               "RelativeDocumentMoniker": "UCHEBKA\\Repos\\SectionRepository.cs",
@@ -106,19 +214,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 2,
               "Title": "EventRepository.cs",
               "DocumentMoniker": "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\UCHEBKA\\UCHEBKA\\Repos\\EventRepository.cs",
               "RelativeDocumentMoniker": "UCHEBKA\\Repos\\EventRepository.cs",
               "ToolTip": "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\UCHEBKA\\UCHEBKA\\Repos\\EventRepository.cs",
               "RelativeToolTip": "UCHEBKA\\Repos\\EventRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAmwH0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T13:01:28.51Z"
+              "WhenOpened": "2025-06-07T13:01:28.51Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 15,
               "Title": "ActivityRepository.cs",
               "DocumentMoniker": "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\UCHEBKA\\UCHEBKA\\Repos\\ActivityRepository.cs",
               "RelativeDocumentMoniker": "UCHEBKA\\Repos\\ActivityRepository.cs",
@@ -130,7 +239,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 14,
               "Title": "JuryWindow.xaml.cs",
               "DocumentMoniker": "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\UCHEBKA\\UCHEBKA\\Views\\JuryWindow.xaml.cs",
               "RelativeDocumentMoniker": "UCHEBKA\\Views\\JuryWindow.xaml.cs",
@@ -138,12 +247,11 @@
               "RelativeToolTip": "UCHEBKA\\Views\\JuryWindow.xaml.cs",
               "ViewState": "AgIAAF0AAAAAAAAAAAAowHkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T12:58:20.566Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-07T12:58:20.566Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "OrgWindow.xaml",
               "DocumentMoniker": "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\UCHEBKA\\UCHEBKA\\Views\\OrgWindow.xaml",
               "RelativeDocumentMoniker": "UCHEBKA\\Views\\OrgWindow.xaml",
@@ -155,7 +263,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 19,
               "Title": "ActivityEvent.cs",
               "DocumentMoniker": "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\UCHEBKA\\UCHEBKA\\Models\\ActivityEvent.cs",
               "RelativeDocumentMoniker": "UCHEBKA\\Models\\ActivityEvent.cs",
@@ -167,7 +275,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 20,
               "Title": "EventJury.cs",
               "DocumentMoniker": "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\UCHEBKA\\UCHEBKA\\Models\\EventJury.cs",
               "RelativeDocumentMoniker": "UCHEBKA\\Models\\EventJury.cs",
@@ -179,7 +287,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 21,
               "Title": "User.cs",
               "DocumentMoniker": "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\UCHEBKA\\UCHEBKA\\Models\\User.cs",
               "RelativeDocumentMoniker": "UCHEBKA\\Models\\User.cs",
@@ -191,7 +299,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 13,
               "Title": "Activity.cs",
               "DocumentMoniker": "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\UCHEBKA\\UCHEBKA\\Models\\Activity.cs",
               "RelativeDocumentMoniker": "UCHEBKA\\Models\\Activity.cs",
@@ -199,12 +307,11 @@
               "RelativeToolTip": "UCHEBKA\\Models\\Activity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T12:46:51.037Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-07T12:46:51.037Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "ProfileWindow.xaml",
               "DocumentMoniker": "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\UCHEBKA\\UCHEBKA\\Views\\ProfileWindow.xaml",
               "RelativeDocumentMoniker": "UCHEBKA\\Views\\ProfileWindow.xaml",
@@ -216,18 +323,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 6,
               "Title": "AdminWindow.xaml",
               "DocumentMoniker": "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\UCHEBKA\\UCHEBKA\\Views\\AdminWindow.xaml",
               "RelativeDocumentMoniker": "UCHEBKA\\Views\\AdminWindow.xaml",
               "ToolTip": "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\UCHEBKA\\UCHEBKA\\Views\\AdminWindow.xaml",
               "RelativeToolTip": "UCHEBKA\\Views\\AdminWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-07T11:50:44.557Z"
+              "WhenOpened": "2025-06-07T11:50:44.557Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 11,
               "Title": "JuryWindow.xaml",
               "DocumentMoniker": "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\UCHEBKA\\UCHEBKA\\Views\\JuryWindow.xaml",
               "RelativeDocumentMoniker": "UCHEBKA\\Views\\JuryWindow.xaml",
@@ -239,7 +347,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 18,
               "Title": "JuryDaragrid.xaml",
               "DocumentMoniker": "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\UCHEBKA\\UCHEBKA\\Views\\Helpers\\JuryDaragrid.xaml",
               "RelativeDocumentMoniker": "UCHEBKA\\Views\\Helpers\\JuryDaragrid.xaml",
@@ -250,7 +358,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 12,
               "Title": "ParticipantWindow.xaml.cs",
               "DocumentMoniker": "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\UCHEBKA\\UCHEBKA\\Views\\ParticipantWindow.xaml.cs",
               "RelativeDocumentMoniker": "UCHEBKA\\Views\\ParticipantWindow.xaml.cs",
@@ -258,73 +366,7 @@
               "RelativeToolTip": "UCHEBKA\\Views\\ParticipantWindow.xaml.cs",
               "ViewState": "AgIAAEIAAAAAAAAAAAAowF0AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-06T13:26:50.752Z"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "c5691e18-38ae-4741-b6f5-c6efbd3ff751",
-        "Display": 2,
-        "X": 183,
-        "Y": 242,
-        "Width": 1574,
-        "Height": 514,
-        "WindowState": 0
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ProfileWindow.xaml.cs",
-              "DocumentMoniker": "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\UCHEBKA\\UCHEBKA\\Views\\ProfileWindow.xaml.cs",
-              "RelativeDocumentMoniker": "UCHEBKA\\Views\\ProfileWindow.xaml.cs",
-              "ToolTip": "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\UCHEBKA\\UCHEBKA\\Views\\ProfileWindow.xaml.cs",
-              "RelativeToolTip": "UCHEBKA\\Views\\ProfileWindow.xaml.cs",
-              "ViewState": "AgIAAIUAAAAAAAAAAAAQwJ8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T13:32:14.348Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "33b8b571-2420-4e01-b2e6-c0e8f620834c",
-        "Display": 1,
-        "X": 105,
-        "Y": 694,
-        "Width": 900,
-        "Height": 1491,
-        "WindowState": 2
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ParticipantWindow.xaml",
-              "DocumentMoniker": "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\UCHEBKA\\UCHEBKA\\Views\\ParticipantWindow.xaml",
-              "RelativeDocumentMoniker": "UCHEBKA\\Views\\ParticipantWindow.xaml",
-              "ToolTip": "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\UCHEBKA\\UCHEBKA\\Views\\ParticipantWindow.xaml",
-              "RelativeToolTip": "UCHEBKA\\Views\\ParticipantWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-07T12:25:52.632Z",
+              "WhenOpened": "2025-06-06T13:26:50.752Z",
               "EditorCaption": ""
             }
           ]

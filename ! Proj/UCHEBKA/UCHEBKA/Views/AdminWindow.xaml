@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:UCHEBKA"
         mc:Ignorable="d"
-        Title="AdminWindow" Height="450" Width="800">
+        Title="AdminWindow" Height="600" Width="1000">
     <Window.Resources>
         <Style x:Key="CenterPanelStyle" TargetType="StackPanel">
             <Setter Property="VerticalAlignment" Value="Center"/>
@@ -35,33 +35,128 @@
         </Style>
     </Window.Resources>
 
-
-
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="119*"/>
-            <ColumnDefinition Width="281*"/>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <TextBlock Grid.ColumnSpan="2"
-         Text="Окно модератора"
-         Style="{StaticResource HeaderTextStyle}"/>
+        <TextBlock Grid.Row="0" Grid.ColumnSpan="2"
+                   Text="Окно модератора"
+                   Style="{StaticResource HeaderTextStyle}"/>
 
-        <StackPanel 
-         Grid.Column="0"
-         Style="{StaticResource CenterPanelStyle}"
-         Margin="10,10,10,10">
+        <!-- Левая панель с профилем -->
+        <StackPanel Grid.Row="1" Grid.Column="0"
+                    Style="{StaticResource CenterPanelStyle}"
+                    Margin="10">
             <Border Style="{StaticResource ImageBorderStyle}">
                 <Image x:Name="ProfileImage"
-             HorizontalAlignment="Center"
-             Stretch="UniformToFill"
-             VerticalAlignment="Center"/>
+                       HorizontalAlignment="Center"
+                       Stretch="UniformToFill"
+                       VerticalAlignment="Center"/>
             </Border>
 
             <Button x:Name="ProfileBtn"
-         Style="{StaticResource ProfileButtonStyle}" Click="ProfileBtn_Click">
+                    Style="{StaticResource ProfileButtonStyle}" 
+                    Click="ProfileBtn_Click">
                 <TextBlock TextAlignment="Center"> Изменить <LineBreak/> профиль</TextBlock>
             </Button>
         </StackPanel>
+
+        <!-- Правая панель с мероприятиями и активностями -->
+        <Grid Grid.Row="1" Grid.Column="1" Margin="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <!-- Заголовок мероприятий -->
+            <TextBlock Grid.Row="0" 
+                       Text="Доступные мероприятия"
+                       FontSize="20"
+                       FontWeight="Bold"
+                       Margin="0,0,0,10"/>
+
+            <!-- Список мероприятий -->
+            <ListView x:Name="EventsListView" 
+                      Grid.Row="1"
+                      ScrollViewer.VerticalScrollBarVisibility="Auto"
+                      SelectionMode="Single">
+                <ListView.ItemContainerStyle>
+                    <Style TargetType="ListViewItem">
+                        <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                        <Setter Property="Padding" Value="0"/>
+                        <Setter Property="Margin" Value="0,2"/>
+                    </Style>
+                </ListView.ItemContainerStyle>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Border BorderBrush="LightGray" BorderThickness="1" Margin="5" Padding="10">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <StackPanel Grid.Column="0">
+                                    <TextBlock Text="{Binding Event.EventTitle}" FontWeight="Bold"/>
+                                    <TextBlock Text="{Binding Event.EventStartTime, StringFormat='Дата: {0:dd.MM.yyyy}'}"/>
+                                    <TextBlock>
+                                        <Run Text="Статус: "/>
+                                        <Run Text="{Binding IsRegistered, StringFormat='{}{0}'}"/>
+                                    </TextBlock>
+                                </StackPanel>
+                                <Button Grid.Column="1"
+                                        Content="Зарегистрироваться"
+                                        Click="RegisterForEvent_Click"
+                                        Margin="10,0,0,0"/>
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <!-- Заголовок активностей -->
+            <TextBlock Grid.Row="2" 
+                       Text="Активности выбранного мероприятия"
+                       FontSize="20"
+                       FontWeight="Bold"
+                       Margin="0,20,0,10"/>
+
+            <!-- Список активностей -->
+            <ListView x:Name="ActivitiesListView" 
+                      Grid.Row="3"
+                      ScrollViewer.VerticalScrollBarVisibility="Auto">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Border BorderBrush="LightGray" BorderThickness="1" Margin="5" Padding="10">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <StackPanel Grid.Column="0">
+                                    <TextBlock Text="{Binding ActivityEvent.FkActivity.ActivityName}" FontWeight="Bold"/>
+                                    <TextBlock Text="{Binding ActivityEvent.StartTime, StringFormat='Время начала: {0:HH:mm}'}"/>
+                                    <TextBlock>
+                                        <Run Text="Статус модерации: "/>
+                                        <Run Text="{Binding IsModerating, StringFormat='{}{0}'}"/>
+                                    </TextBlock>
+                                </StackPanel>
+                                <Button Grid.Column="1"
+                                        Content="Стать модератором"
+                                        Click="ModerateActivity_Click"
+                                        Margin="10,0,0,0"/>
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
     </Grid>
 </Window>

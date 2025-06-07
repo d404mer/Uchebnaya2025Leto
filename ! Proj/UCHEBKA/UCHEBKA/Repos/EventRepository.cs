@@ -9,7 +9,7 @@ namespace UCHEBKA.Repos
     public class EventRepository
     {
         private readonly UchebnayaLeto2025Context _db;
-        private const string BaseImagePath = "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\UCHEBKA\\UCHEBKA\\Images\\Events\\"; 
+        private const string BaseImagePath = "D:\\CIT KAI\\Uchebnaya2025Leto\\! Proj\\UCHEBKA\\UCHEBKA\\Images\\Events\\";
 
         public EventRepository(UchebnayaLeto2025Context db)
         {

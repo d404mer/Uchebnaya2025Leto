@@ -24,10 +24,10 @@ namespace UCHEBKA.Views
         public EventCard(Event ev)
         {
             InitializeComponent();
-            DataContext = ev; 
+            DataContext = ev;
         }
 
 
-        
+
     }
 }

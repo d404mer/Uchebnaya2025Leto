@@ -73,8 +73,9 @@
                         <TextBlock Grid.Row="0" Grid.Column="0" Text="Email:" Margin="0,5"/>
                         <TextBox x:Name="EmailTextBox" Grid.Row="0" Grid.Column="1" Margin="5"/>
 
-                        <Button Grid.Row="1" Grid.Column="1" Content="Изменить пароль" 
-                                HorizontalAlignment="Right" Margin="5" Click="ChangePassword_Click"/>
+                        <!--<Button
+                            Grid.Row="1" Grid.Column="1" Content="Изменить пароль" 
+                                HorizontalAlignment="Right" Margin="5" Click="ChangePassword_Click"/>-->
                     </Grid>
                 </GroupBox>
             </StackPanel>
